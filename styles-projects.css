@@ -1,0 +1,134 @@
+/* import fonts */
+
+html {
+    font-size: 20px;
+    /* insert code */
+}
+
+#projects-button {
+    background-color: #98d5f6;
+}
+
+
+
+section, header, footer {
+    width: 95%;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+
+    /* BANNER FORMATTING */
+
+#hero {
+    height: 160px;
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    text-align: center;
+    background-color: #bde0f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    padding
+}
+
+.large {
+    font-size: 20px;
+}
+
+
+
+
+/* IMAGE FORMATTING */
+
+#kristy-toon {
+        object-fit: cover;
+        /* fits container + clips content to keep aspect ratio */
+        /* border-radius: 50%; */
+        /* rounds image */
+        width: 150px;
+        /* sets width and height changes based on this */
+        height: 150px;
+        /* vh: changes size based width and size of screen */
+}
+
+.nav-icon {
+    width: 150px;
+    height: 150px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* BLOCK FORMATTING */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+#link-block {
+    width: 100%;
+}
+
+#social-block {
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#nav-block {
+    height: 65px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* CARD FORMATTING */
+
+.card {
+}
+
+.card-container {
+    padding: 20px;
+    background-color: lightgray;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+/* MEDIA QUERIES 
+
+** upto 400px
+
+
+
+*/
+
+
+
+

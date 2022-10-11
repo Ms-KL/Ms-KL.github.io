@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Kristy Leigh Portfolio">
+        <meta name="author" content="Kristy Leigh Gray">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="styles-about.css">
+        <title>Kristy Leigh | Developer | ABOUT</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img id="logo" src="images/logo.png" alt=""></a>
+
+            <!-- SOCIAL BLOCK OF LINKS
+                flexbox, top right corner... sticky
+                source: linkedin and github icons. style with css
+                Source:
+                LinkedIn icon: https://www.reshot.com/free-svg-icons/item/linkedin-G7YJ8FXBKT/
+                Github icon: https://www.reshot.com/free-svg-icons/item/github-NY46M9DGFU/
+            -->
+            <div id="link-block">
+                <div id="social-block">
+                    <a href="https://www.linkedin.com/in/kristyleighgray/"  id="linkedin"><img class="social-icon" src="images/linkedin-icon.svg" alt="Linkedin Icon"></a>
+                    <a href="https://github.com/Ms-KL" id="github"><img class="social-icon" src="images/github-icon.svg" alt="Github Icon"></a>
+                    <a href="mailto:thekristyleigh+contact@gmail.com" id="email"><img class="social-icon" src="images/email-icon.svg" alt="Email Icon"></a>
+                </div>
+
+            <!-- NAVIGATION
+                flexbox and style as buttons and add gaps
+                right side location, inline with bottom of logo
+                point skills to section in about page
+            -->
+            <div id="nav-block">
+                <nav>
+                    <button class="nav-button" id="about-button"><a href="about.html">About</a></button>
+                    <button class="nav-button" id="projects-button"><a href="projects.html">Projects</a></button>
+                    <button class="nav-button" id="skills-button"><a href="about.html#skills">Skills</a></button>
+                    <button class="nav-button" id="contact-button"><a href="contact.html">Contact</a></button>
+                </nav>
+            </div>
+            <!-- </div> -->
+        </header>
+
+        <main>
+            <!-- BANNER
+                Center, coloured background, call to action button
+                Write copy.
+            -->
+            <section>
+                <div id="hero">
+                    <h1>Who is Kristy Leigh?</h1>
+                </div>
+            </section>
+
+            <!-- WEBSITE CARDS
+                css grid (or flexbox)
+                2x2 mobile, 4x1 desktop and tablet, responsive screen change
+                create <a id="skills"></a> around heading on about page to link to skills in nav and skills block
+                Sources: 
+                Toon created by AI: https://imagetocartoon.com/#cartoonize
+                Project icon: https://www.reshot.com/free-svg-icons/item/programming-7A4MXHJ25Q/
+                Skills icon: https://www.reshot.com/free-svg-icons/item/js-code-GAFL92KN83/
+                Contact icon: https://www.reshot.com/free-svg-icons/item/email-contact-BQ8GNL5EWC/
+            -->
+        
+            <section>
+                <div class="about-container">
+                    <div class="card" id="about-card">
+                        <div id="about-card-img">
+                            <img id="kristy-toon" src="images/kristy-toon.png" alt="Cartoon portrait of Kristy Leigh made by X">
+                        </div>
+                        <div id="about-card-text">
+                            <h2>Emerging Developer</h2>
+                            <p class="large">An emerging developer fascinated with AI... who likes cats and stuff. Insert the things here. All of the things. 100 words and above of stuff and thing. I'm a banana. Wooo. yeah I like banana. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="tech-cards">
+                    <div class="tech-card" id="skills-card">
+                        <a id="skills"><h2>Skills</h2></a>
+                    </div>
+                </div>
+                    <div class="tech-card" id="certifications-card"></div>
+            </section>
+        </main> 
+
+        <!-- FOOTER -->
+        <footer>
+            <p> &copy; Kristy Leigh Gray 2022</p>
+        </footer>
+    </body>
+</html>
