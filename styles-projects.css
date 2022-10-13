@@ -63,6 +63,7 @@ h1 {
 .nav-icon {
     width: 150px;
     height: 150px;
+    margin: auto;
 }
 
 #logo {
