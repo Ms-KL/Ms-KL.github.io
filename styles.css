@@ -1,3 +1,9 @@
+/* ------- TO DO 
+    edit wf for about
+    project page
+    readme
+    connect branch to main
+------- */
 
 
 /* -------------- CSS: all pages -------------- */
@@ -263,6 +269,7 @@ h1 {
 #form-button:hover {
     opacity: 50%;
     transition: all 0.5s;
+    cursor:pointer;
 }
 
 
