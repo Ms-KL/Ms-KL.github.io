@@ -1,6 +1,6 @@
 
 
-/* CSS: all pages */
+/* -------------- CSS: all pages -------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;900&display=swap');
 
@@ -139,43 +139,39 @@ h1 {
     transition: all 0.5s;
 }
 
-/* CSS: HOMEPAGE ONLY */
+/* -------------- CSS: HOMEPAGE & ABOUT --------------  */
 
 /* CARD FORMATTING */
 
 #body-homepage #kristy-toon {
-        object-fit: cover;
+    object-fit: cover;
     }
 
-#body-homepage .card-icon {
+#body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon {
     width: 15vh;
-    max-width: 120px;
     margin: 5px;
+    max-width: 120px;
 }
-#body-homepage .card-container {
+
+#body-homepage .card-container, #body-about .skills-container, #body-about .certs-container  {
     width: 100%;
     padding: 0;
     text-align: center;
-    /* display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center; */
-    /* gap: 2vh; */
 }
-#body-homepage .card-row {
+#body-homepage .card-row, #body-about .skills-row, #body-about .certs-row  {
     width: 95%;
     padding: 15px;
     display: flex;
     justify-content: space-around;
 }
-#body-homepage .card {
+#body-homepage .card, #body-about .skills-icon, #body-about .certs-icon {
     display: flex;
     align-items: center;
 }
-#body-homepage h2 {
+#body-homepage h2, #body-about h2 {
     font-size: 1.3rem;
     margin-block-start: .5em;
     margin-block-end: .5em;
-    /* text-decoration: none; */
 }
 #body-homepage h2:hover, #body-contact h3:hover {
     color: #fff;
@@ -184,8 +180,25 @@ h1 {
     background-color: #F2951D;
 }
 
+/* -------------- CSS: ABOUT PAGE ONLY --------------  */
 
-/* MEDIA QUERIES */
+/* CARD FORMATTING */
+
+#body-about .card-icon {
+    width: 30vh;
+}
+
+#body-about .about-container {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+#body-about #skills-block h2 {
+    text-align: center;
+}
+
+/* -------------- MEDIA QUERIES --------------  */
 
 /* Breakpoints
   small phone min 320px | default | eg iphone 5
@@ -203,12 +216,12 @@ h1 {
         display: contents;
     }
     
-    #body-homepage .card-row {
+    #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row {
         display:contents
         }   
 
     /* format as whole flexbox */
-    #body-homepage .card-container {
+    #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container {
         width: 100%;
         padding: 0;
         margin: 0;
@@ -217,7 +230,7 @@ h1 {
         gap: 1vh;
         }
 
-    #body-homepage .card-icon {
+    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon {
         max-width: 130px;
     }
 
@@ -226,7 +239,7 @@ h1 {
         font-size: 19px;
     }
 
-    #body-homepage .card-icon {
+    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon  {
             width: 18vh;
             max-width: 150px;
         }
@@ -240,13 +253,13 @@ h1 {
     #body-homepage .card-container {
         gap: 5vh;
         }
-    #body-homepage .card-icon {
+    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon {
             width: 25vh;
             max-width: 200px;
         }
-    #body-homepage #card-box {
+    #body-homepage #card-block, #body-about #skills-block {
             max-width: 1200px;
         }
-    }
+}
 
 
