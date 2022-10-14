@@ -70,7 +70,7 @@ header {
 
 .nav-button, .cta-button {
     padding: 5px;
-    margin: 5px;
+    margin: 3px;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
@@ -208,30 +208,22 @@ h1 {
 
 /* FORM FORMATTING */
 
-/* .contact-form {
-    margin: 50px auto;
-    width: 90%;
-} */
 
 #contact-block {
-    border: 1px dotted gray;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    border: 2px dotted gray;
     border-radius: 60px;
-    margin: 10px 50px;
     padding: 20px;
+    /* FIX */
 }
 
 .form-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
 }
 
 .form-item label {
-    flex-basis: 150px;
+    flex-basis: 100px;
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -241,6 +233,8 @@ h1 {
     flex-basis: 60%;
     border: 2px solid #bde0f3;
     border-radius: 10px;
+    margin: 10px;
+    min-width: 100px;
 }
 
 .form-item input:hover,
@@ -285,17 +279,11 @@ h1 {
     html {
         font-size: 18px;
     }
-
-    /* remove row formatting */
-    .nav-row {
-        display: contents;
-    }
     
-    #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
+    .nav-row, #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
         display:contents
         }   
 
-    /* format as whole flexbox */
     #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container {
         width: 100%;
         padding: 0;
@@ -336,5 +324,3 @@ h1 {
             max-width: 1200px;
         }
 }
-
-
