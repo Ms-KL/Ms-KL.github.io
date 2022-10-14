@@ -7,10 +7,12 @@
         <meta name="author" content="Kristy Leigh Gray">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- CSS Styles -->
-        <link rel="stylesheet" href="styles-contact.css">
-        <title>Kristy Leigh | Developer | ABOUT</title>
+        <link rel="stylesheet" href="styles.css">
+        <title>Kristy Leigh | Developer | PROJECTS</title>
     </head>
-    <body>
+
+
+    <body id="body-contact">
         <header>
             <a href="index.html"><img id="logo" src="images/logo.png" alt=""></a>
 
@@ -21,11 +23,11 @@
                 LinkedIn icon: https://www.reshot.com/free-svg-icons/item/linkedin-G7YJ8FXBKT/
                 Github icon: https://www.reshot.com/free-svg-icons/item/github-NY46M9DGFU/
             -->
-            <div id="link-block">
+            <div>
                 <div id="social-block">
-                    <a href="https://www.linkedin.com/in/kristyleighgray/"  id="linkedin"><img class="social-icon" src="images/linkedin-icon.svg" alt="Linkedin Icon"></a>
-                    <a href="https://github.com/Ms-KL" id="github"><img class="social-icon" src="images/github-icon.svg" alt="Github Icon"></a>
-                    <a href="mailto:thekristyleigh+contact@gmail.com" id="email"><img class="social-icon" src="images/email-icon.svg" alt="Email Icon"></a>
+                    <a href="https://www.linkedin.com/in/kristyleighgray/" target="_blank" id="linkedin"><img class="social-icon" src="images/linkedin-icon.svg" alt="Linkedin Icon"></a>
+                    <a href="https://github.com/Ms-KL" target="_blank" id="github"><img class="social-icon" src="images/github-icon.svg" alt="Github Icon"></a>
+                    <a href="mailto:thekristyleigh+contact@gmail.com" target="_blank" id="email"><img class="social-icon" src="images/email-icon.svg" alt="Email Icon"></a>
                 </div>
 
             <!-- NAVIGATION
@@ -35,10 +37,20 @@
             -->
             <div id="nav-block">
                 <nav>
-                    <button class="nav-button" id="about-button"><a href="about.html">About</a></button>
-                    <button class="nav-button" id="projects-button"><a href="projects.html">Projects</a></button>
-                    <button class="nav-button" id="skills-button"><a href="about.html#skills">Skills</a></button>
-                    <button class="nav-button" id="contact-button"><a href="contact.html">Contact</a></button>
+                    <div class="nav-row">
+                        <button class="nav-button" id="about-button"><a class="button-link" href="about.html">About</a></button>
+                        <button class="nav-button" id="projects-button"><a class="button-link"  href="projects.html">Projects</a></button>
+                    </div>
+                    <div class="nav-row"></div>
+                        <button class="nav-button" id="skills-button"><a class="button-link"  href="about.html#skills">Skills</a></button>
+                        <button class="nav-button" id="contact-button"><a class="button-link" href="contact.html">Contact</a></button>
+                    </div>
+
+                    <!-- <a class="nav-item" href="about.html">About</a>
+                    <a class="nav-item" href="projects.html">Projects</a>
+                    <a class="nav-item" href="about.html#skills">Skills</a>
+                    <a class="nav-item" href="contact.html">Contact</a> -->
+
                 </nav>
             </div>
             <!-- </div> -->
@@ -51,56 +63,58 @@
             -->
             <section>
                 <div id="hero">
-                    <h1>Contact</h1>
+                    <h1>Contact me</h1>
+                    <p class="large">I'm always open to new challenges and adventures. </p>
+                    <button class="cta-button" id="email-direct-button"><a class="button-link" href="mailto:thekristyleigh+contact@gmail.com" target="_blank">Send me an email</a></button>
                 </div>
             </section>
 
-            <!-- WEBSITE CARDS
-                css grid (or flexbox)
-                2x2 mobile, 4x1 desktop and tablet, responsive screen change
-                create <a id="skills"></a> around heading on about page to link to skills in nav and skills block
-                Sources: 
-                Toon created by AI: https://imagetocartoon.com/#cartoonize
-                Project icon: https://www.reshot.com/free-svg-icons/item/programming-7A4MXHJ25Q/
-                Skills icon: https://www.reshot.com/free-svg-icons/item/js-code-GAFL92KN83/
-                Contact icon: https://www.reshot.com/free-svg-icons/item/email-contact-BQ8GNL5EWC/
-            -->
         
             <section>
-                <form action="https://formspree.io/f/mnqrzpdo" method="post">
-                    <!-- your code here -->
-                    <!-- POST (research method types) -->
-                    <div class="form-item">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
-                        <!-- 
-                        FOR in label needs to match ID in input
-                        MUST have for, id & name in input
-                        Don't put placeholders in input
-                        -->
-                    </div>
-                    <div class="form-item">
-                        <label for="mail">Email</label>
-                        <input type="email" id="mail" name="email">
-                    </div>  
-                    <div class="form-item">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"></textarea>
-                        <!-- 
-                        More than 1 line of text or paragraph
-                        Use this instead of input
-                        Can Style the text area - heights etc
-                        -->
-                    </div>
-                    <div class="form-item">
-                        <button type="submit">Send!</button>
-                        <!--
-                        Can Style buttons
-                        -->
-                    </div>
-                       
-                       
-                </form>
+                <div id="contact-form">
+                    <h2>Get in touch</h2>
+                    <form action="https://formspree.io/f/mnqrzpdo" method="post">
+                        <!-- your code here -->
+                        <!-- POST (research method types) -->
+                        <div class="form-item">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                            <!-- 
+                            FOR in label needs to match ID in input
+                            MUST have for, id & name in input
+                            Don't put placeholders in input
+                            -->
+                        </div>
+                        <div class="form-item">
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" name="email">
+                        </div>  
+                        <div class="form-item">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"></textarea>
+                            <!-- 
+                            More than 1 line of text or paragraph
+                            Use this instead of input
+                            Can Style the text area - heights etc
+                            -->
+                        </div>
+                        <div class="form-item">
+                            <button type="submit">Send!</button>
+                            <!--
+                            Can Style buttons
+                            -->
+                        </div>
+                    </form>
+                </div>
+                <div id="connect with me">
+                    <h2>Connect with me</h2>
+                        <div id="social-cards">
+                            <a href="https://www.linkedin.com/in/kristyleighgray/" target="_blank" id="linkedin"><img class="social-card" src="images/linkedin-icon.svg" alt="Linkedin Icon">
+                            <h3>LinkedIn</h3></a>
+                            <a href="https://github.com/Ms-KL" target="_blank" id="github"><img class="social-card" src="images/github-icon.svg" alt="Github Icon">
+                            <h3>GitHub</h3></a>
+                        </div>
+                </div>
             </section>
         </main> 
 
