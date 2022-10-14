@@ -147,28 +147,28 @@ h1 {
     object-fit: cover;
     }
 
-#body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon {
+#body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
     width: 15vh;
     margin: 5px;
     max-width: 120px;
 }
 
-#body-homepage .card-container, #body-about .skills-container, #body-about .certs-container  {
+#body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container {
     width: 100%;
     padding: 0;
     text-align: center;
 }
-#body-homepage .card-row, #body-about .skills-row, #body-about .certs-row  {
+#body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row  {
     width: 95%;
     padding: 15px;
     display: flex;
     justify-content: space-around;
 }
-#body-homepage .card, #body-about .skills-icon, #body-about .certs-icon {
+#body-homepage .card, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
     display: flex;
     align-items: center;
 }
-#body-homepage h2, #body-about h2 {
+#body-homepage h2, #body-about h2, #body-contact h3 {
     font-size: 1.3rem;
     margin-block-start: .5em;
     margin-block-end: .5em;
@@ -180,7 +180,7 @@ h1 {
     background-color: #F2951D;
 }
 
-/* -------------- CSS: ABOUT PAGE ONLY --------------  */
+/* -------------- CSS: ABOUT & CONTACT PAGES --------------  */
 
 /* CARD FORMATTING */
 
@@ -194,9 +194,77 @@ h1 {
     text-align: center;
 }
 
-#body-about #skills-block h2 {
+#body-about #skills-block h2, #body-contact h2  {
     text-align: center;
 }
+
+/* -------------- CSS: CONTACT PAGE ONLY --------------  */
+
+/* FORM FORMATTING */
+
+/* .contact-form {
+    margin: 50px auto;
+    width: 90%;
+} */
+
+#contact-block {
+    border: 1px dotted gray;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border-radius: 60px;
+    margin: 10px 50px;
+    padding: 20px;
+}
+
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.form-item label {
+    flex-basis: 150px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.form-item input,
+.form-item textarea {
+    flex-basis: 60%;
+    border: 2px solid #bde0f3;
+    border-radius: 10px;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+    background-color: #bde0f3;
+    opacity: 50%;
+}
+
+.form-item input,
+.form-item textarea { 
+    border: 2px solid #000000;
+    background-color: #FFF;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+#form-button {
+    width: 100px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: #000000;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+#form-button:hover {
+    opacity: 50%;
+    transition: all 0.5s;
+}
+
 
 /* -------------- MEDIA QUERIES --------------  */
 
@@ -216,12 +284,12 @@ h1 {
         display: contents;
     }
     
-    #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row {
+    #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
         display:contents
         }   
 
     /* format as whole flexbox */
-    #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container {
+    #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container {
         width: 100%;
         padding: 0;
         margin: 0;
@@ -230,7 +298,7 @@ h1 {
         gap: 1vh;
         }
 
-    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon {
+    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
         max-width: 130px;
     }
 
@@ -239,7 +307,7 @@ h1 {
         font-size: 19px;
     }
 
-    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon  {
+    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact #connect-icon {
             width: 18vh;
             max-width: 150px;
         }
@@ -253,11 +321,11 @@ h1 {
     #body-homepage .card-container {
         gap: 5vh;
         }
-    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon {
+    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
             width: 25vh;
             max-width: 200px;
         }
-    #body-homepage #card-block, #body-about #skills-block {
+    #body-homepage #card-block, #body-about #skills-block, #body-contact #connect-block {
             max-width: 1200px;
         }
 }
