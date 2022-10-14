@@ -16,12 +16,13 @@
         <header>
             <a href="index.html"><img id="logo" src="images/logo.png" alt=""></a>
 
-            <!-- SOCIAL BLOCK OF LINKS
-                flexbox, top right corner... sticky
-                source: linkedin and github icons. style with css
-                Source:
-                LinkedIn icon: https://www.reshot.com/free-svg-icons/item/linkedin-G7YJ8FXBKT/
-                Github icon: https://www.reshot.com/free-svg-icons/item/github-NY46M9DGFU/
+            <!-- SOCIAL BLOCK
+                LinkedIn icon: 
+                https://www.reshot.com/free-svg-icons/item/linkedin-G7YJ8FXBKT/
+                Github icon: 
+                https://www.reshot.com/free-svg-icons/item/github-NY46M9DGFU/
+                Email icon:
+                INSERT
             -->
             <div>
                 <div id="social-block">
@@ -46,14 +47,8 @@
                         <button class="nav-button" id="contact-button"><a class="button-link" href="contact.html">Contact</a></button>
                     </div>
 
-                    <!-- <a class="nav-item" href="about.html">About</a>
-                    <a class="nav-item" href="projects.html">Projects</a>
-                    <a class="nav-item" href="about.html#skills">Skills</a>
-                    <a class="nav-item" href="contact.html">Contact</a> -->
-
                 </nav>
             </div>
-            <!-- </div> -->
         </header>
 
         <main>
@@ -65,20 +60,11 @@
                 <div id="hero">
                     <h1>Who is Kristy Leigh?</h1>
                     <p class="large">Emerging developer fascinated with AI.</p>
-                    <button class="cta-button" id="learn-more-button"><a class="button-link" href="about.html">Learn more</a></button>
+                    <button class="cta-button" id="linkedin-button"><a class="button-link" href="https://www.linkedin.com/in/kristyleighgray/" target="_blank">Explore LinkedIn</a></button>
                 </div>
             </section>
 
-            <!-- WEBSITE CARDS
-                css grid (or flexbox)
-                2x2 mobile, 4x1 desktop and tablet, responsive screen change
-                create <a id="skills"></a> around heading on about page to link to skills in nav and skills block
-                Sources: 
-                Toon created by AI: https://imagetocartoon.com/#cartoonize
-                Project icon: https://www.reshot.com/free-svg-icons/item/programming-7A4MXHJ25Q/
-                Skills icon: https://www.reshot.com/free-svg-icons/item/js-code-GAFL92KN83/
-                Contact icon: https://www.reshot.com/free-svg-icons/item/email-contact-BQ8GNL5EWC/
-            -->
+            <!-- ABOUT BLOCK -->
         
             <section id="about-block">
                 <div class="about-container">
@@ -87,11 +73,39 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ip</p>
                 </div>
             </section>
-            <section id="skills-block">
-                <a id="skills">
-                    <h2>Skills & Tech</h2>
-                </a>
 
+            <!-- SOCIAL BLOCK 
+                HTML icon: 
+                https://uxwing.com/html-icon/
+                CSS icon: 
+                https://uxwing.com/css-icon/
+                Python icon: 
+                https://uxwing.com/python-programming-language-icon/
+                Javascript icon: 
+                https://uxwing.com/javascript-programming-language-icon/
+            -->
+            <section id="skills-block">
+                <div id="skills-card">
+                    <a id="skills"><h2>Skills</h2></a>
+                    <div class="skills-container">
+                        <div class="skills-row">
+                            <img class="skills-icon" id="html-icon" src="images/html-icon.png" alt="html icon">
+                            <img class="skills-icon" id="css-icon" src="images/css-icon.png" alt="css icon">
+                        </div>
+                        <div class="skills-row">
+                            <img class="skills-icon" id="python-icon" src="images/python-icon.png" alt="python icon">
+                            <img class="skills-icon" id="javascript-icon"  src="images/javascript-icon.png" alt="javascript icon">
+                        </div>
+                    </div>
+                </div>
+                <div id="certs-card">
+                    <h2>Certifications</h2>
+                    <div class="certs-container">
+                        <div class="certs-row">
+                            <img class="certs-icon" id="ms-azure-ai-fundamentals" src="images/ms-azure-ai-fundamentals-cert.png" alt="Microsoft Certification badge for Azure AI Fundamentals">
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </main> 
