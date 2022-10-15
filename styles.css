@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;900&display=swap');
 
 html {
-    font-size: 16px;
+    font-size: 17px;
     font-family: 'Poppins', Arial, sans-serif;
     background-color: #fff;
 }
@@ -41,8 +41,8 @@ header {
 }
 
 #logo {
-    width: 100px;
-    height: 100px; 
+    width: 70px;
+    height: 70px; 
     margin-right: 10px;
 }
 
@@ -74,16 +74,16 @@ header {
     text-decoration: none;
     border-radius: 5px;
     border: none;
+    font-size: .9rem;
 }
 
 .nav-button {
-    width: 63px;
+    width: 80px;
     background-color: #bde0f3;
 }
 
 #nav-block {
     height: 70%;
-    font-size: .5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -120,7 +120,7 @@ h1 {
 
 .large {
     font-size: 1.2rem;
-    line-height: 1.2rem;
+    line-height: 2rem;
     padding: 20px;
     margin: auto;
 }
@@ -291,7 +291,11 @@ h1 {
         font-size: 18px;
     }
 
-    
+    #logo {
+        width: 80px;
+        height: 80px;
+    }
+
     .nav-row, #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
         display:contents
         }   
@@ -331,6 +335,11 @@ h1 {
         font-size: 19px;
     }
 
+    #logo {
+        width: 90px;
+        height: 90px;
+    }
+
     #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact #connect-icon {
         width: 18vh;
         max-width: 140px;
@@ -339,6 +348,11 @@ h1 {
 @media (min-width: 1024px) {
     html {
         font-size: 20px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 100px;
     }
 
     #body-homepage .card-container {
