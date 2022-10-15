@@ -324,9 +324,9 @@ h1 {
         max-width: 140px;
         }
 
-    /* #body-projects .project-icon {
+    #body-projects .project-icon {
         max-width: 350px;
-    } */
+    }
 
     #body-projects #tech-block img {
         width: 50px;
