@@ -159,9 +159,9 @@ h1 {
 }
 
 #body-projects .project-icon {
-    width: 30vh;
-    margin: 5px;
-    max-width: 170px;
+    margin: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 5px 0 lightgray,0px 6px 20px 0 lightgray;
 }
 
 #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container, #body-projects .project-container {
@@ -292,7 +292,7 @@ h1 {
     }
 
     #body-projects .project-icon {
-        max-width: 300px;
+        width: 300px;
     }
     
     .nav-row, #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
@@ -324,9 +324,6 @@ h1 {
         max-width: 130px;
     }
 
-    #body-projects #tech-block img {
-        width: 40px;
-    }
 
 @media (min-width: 768px) {
     html {
@@ -339,9 +336,6 @@ h1 {
         }
 
 
-    #body-projects #tech-block img {
-        width: 50px;
-    }
 
 @media (min-width: 1024px) {
     html {
@@ -360,7 +354,4 @@ h1 {
         max-width: 1300px;
         }
     
-    #body-projects #tech-block img {
-        width: 60px;
-        }
 }
