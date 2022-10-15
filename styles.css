@@ -210,7 +210,7 @@ h1 {
     text-align: center;
 }
 
-#body-about #skills-block h2, #body-contact h2  {
+#body-about #skills-block h2, #body-contact h2 {
     text-align: center;
 }
 
@@ -299,11 +299,23 @@ h1 {
         display:contents
         }   
 
-    #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container, #body-projects .project-container {
+    #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container {
         width: 100%;
         padding: 0;
         margin: 0;
         display: inline-flex;
+        justify-content: space-around;
+        gap: 1vh;
+        }
+    
+    #body-projects .project-card {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
         justify-content: space-around;
         gap: 1vh;
         }
@@ -326,9 +338,6 @@ h1 {
         max-width: 140px;
         }
 
-    /* #body-projects .project-icon {
-        max-width: 350px;
-    } */
 
     #body-projects #tech-block img {
         width: 50px;
