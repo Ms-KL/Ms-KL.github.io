@@ -148,28 +148,34 @@ h1 {
 
 /* CARD FORMATTING */
 
-#body-homepage #kristy-toon {
+#body-homepage #kristy-toon, #body-projects .project-icon {
     object-fit: cover;
     }
 
-#body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon, #body-projects .project-icon {
+#body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
     width: 15vh;
     margin: 5px;
     max-width: 120px;
 }
 
-#body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container, #body-project .project-container {
+#body-projects .project-icon {
+    width: 30vh;
+    margin: 5px;
+    max-width: 170px;
+}
+
+#body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container, #body-projects .project-container {
     width: 100%;
     padding: 0;
     text-align: center;
 }
-#body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row, #body-project .project-row   {
+#body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
     width: 95%;
     padding: 15px;
     display: flex;
     justify-content: space-around;
 }
-#body-homepage .card, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon, #body-project .project-icon {
+#body-homepage .card, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
     display: flex;
     align-items: center;
 }
@@ -282,12 +288,16 @@ h1 {
     html {
         font-size: 18px;
     }
+
+    #body-projects .project-icon {
+        max-width: 300px;
+    }
     
-    .nav-row, #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row, #body-project .proejct-row {
+    .nav-row, #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
         display:contents
         }   
 
-    #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container, #body-project .project-container {
+    #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container, #body-projects .project-container {
         width: 100%;
         padding: 0;
         margin: 0;
@@ -296,7 +306,7 @@ h1 {
         gap: 1vh;
         }
 
-    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon, #body-contact .connect-icon, #body-project .project-icon {
+    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
         max-width: 130px;
     }
 
@@ -309,10 +319,14 @@ h1 {
         font-size: 19px;
     }
 
-    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact #connect-icon, #body-proejct #proejct-icon {
+    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact #connect-icon {
         width: 18vh;
         max-width: 140px;
         }
+
+    /* #body-projects .project-icon {
+        max-width: 350px;
+    } */
 
     #body-projects #tech-block img {
         width: 50px;
@@ -326,11 +340,12 @@ h1 {
     #body-homepage .card-container {
         gap: 5vh;
         }
-    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon, #body-proejct .proejct-icon {
+    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
         width: 25vh;
         max-width: 150px;
         }
-    #body-homepage #card-block, #body-about #skills-block, #body-contact #connect-block, #body-projects #proejct-block {
+
+    #body-homepage #card-block, #body-about #skills-block, #body-contact #connect-block, #body-projects #project-block {
         max-width: 1300px;
         }
     
