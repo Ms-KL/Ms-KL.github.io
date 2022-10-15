@@ -291,9 +291,6 @@ h1 {
         font-size: 18px;
     }
 
-    #body-projects .project-icon {
-        width: 300px;
-    }
     
     .nav-row, #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
         display:contents
@@ -320,6 +317,10 @@ h1 {
         gap: 1vh;
         }
 
+    #body-projects .project-icon {
+        align-self: center;
+    }
+
     #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
         max-width: 130px;
     }
@@ -334,8 +335,6 @@ h1 {
         width: 18vh;
         max-width: 140px;
         }
-
-
 
 @media (min-width: 1024px) {
     html {
