@@ -50,9 +50,38 @@ header {
     filter: invert(100%);
 }
 
+#logo {
+    width: 80px;
+    height: 80px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 .social-icon {
     width: 25px;
     height: 25px;
+}
+
+.social-icon:hover, #body-contact .connect-icon:hover {
+        animation: gelatine 0.5s infinite;
+}
+
+@keyframes gelatine {
+        from, to { transform: scale(1, 1); }
+        25% { transform: scale(0.9, 1.1); }
+        50% { transform: scale(1.1, 0.9); }
+        75% { transform: scale(0.95, 1.05); }
 }
 
 .social-icon:hover {
@@ -95,6 +124,8 @@ header {
     justify-content: space-around;
     width: 100%;
 }
+
+
 
 /* BANNER FORMATTING */
 
@@ -151,6 +182,17 @@ h1 {
 #body-homepage #kristy-toon, #body-projects .project-icon {
     object-fit: cover;
     }
+
+#kristy-toon {
+    animation: hithere 3s ease infinite;
+}
+@keyframes hithere {
+    30% { transform: scale(1); }
+    40%, 60% { transform: rotate(-20deg) scale(1); }
+    50% { transform: rotate(20deg) scale(1); }
+    70% { transform: rotate(0deg) scale(1); }
+    100% { transform: scale(1); }
+}
 
 #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
     width: 15vh;
@@ -291,14 +333,25 @@ h1 {
         font-size: 18px;
     }
 
-    #logo {
-        width: 80px;
-        height: 80px;
+    #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
+        display:contents;
+        }   
+    
+    .header-link-block {
+        width: 60%;
     }
 
-    .nav-row, #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
-        display:contents
-        }   
+    nav, .nav-row  {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .nav-button {
+        flex-grow: 1;
+        margin: 7px;
+    }
+
+
 
     #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container {
         width: 100%;
