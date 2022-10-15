@@ -159,9 +159,9 @@ h1 {
 }
 
 #body-projects .project-icon {
-    width: 30vh;
-    margin: 5px;
-    max-width: 170px;
+    margin: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 5px 0 lightgray,0px 6px 20px 0 lightgray;
 }
 
 #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container, #body-projects .project-container {
@@ -195,6 +195,7 @@ h1 {
     width: 30px;
 }
 
+
 /* -------------- CSS: ABOUT & CONTACT PAGES --------------  */
 
 /* CARD FORMATTING */
@@ -209,7 +210,7 @@ h1 {
     text-align: center;
 }
 
-#body-about #skills-block h2, #body-contact h2  {
+#body-about #skills-block h2, #body-contact h2 {
     text-align: center;
 }
 
@@ -282,22 +283,20 @@ h1 {
   small phone min 320px | default | eg iphone 5
   large phone max 600px
   tablet phone max 768px
-  tablet and small desktop max 1024px */
+  tablet and small desktop max 1024px
+  max width */
 
 @media (min-width: 600px) {
     html {
         font-size: 18px;
     }
 
-    #body-projects .project-icon {
-        max-width: 300px;
-    }
     
     .nav-row, #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
         display:contents
         }   
 
-    #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container, #body-projects .project-container {
+    #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container {
         width: 100%;
         padding: 0;
         margin: 0;
@@ -305,14 +304,27 @@ h1 {
         justify-content: space-around;
         gap: 1vh;
         }
+    
+    #body-projects .project-card {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        justify-content: space-around;
+        gap: 1vh;
+        }
+
+    #body-projects .project-icon {
+        align-self: center;
+    }
 
     #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
         max-width: 130px;
     }
 
-    #body-projects #tech-block img {
-        width: 40px;
-    }
 
 @media (min-width: 768px) {
     html {
@@ -323,14 +335,6 @@ h1 {
         width: 18vh;
         max-width: 140px;
         }
-
-    #body-projects .project-icon {
-        max-width: 350px;
-    }
-
-    #body-projects #tech-block img {
-        width: 50px;
-    }
 
 @media (min-width: 1024px) {
     html {
@@ -349,7 +353,4 @@ h1 {
         max-width: 1300px;
         }
     
-    #body-projects #tech-block img {
-        width: 60px;
-        }
 }
