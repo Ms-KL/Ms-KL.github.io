@@ -195,6 +195,7 @@ h1 {
     width: 30px;
 }
 
+
 /* -------------- CSS: ABOUT & CONTACT PAGES --------------  */
 
 /* CARD FORMATTING */
@@ -282,7 +283,8 @@ h1 {
   small phone min 320px | default | eg iphone 5
   large phone max 600px
   tablet phone max 768px
-  tablet and small desktop max 1024px */
+  tablet and small desktop max 1024px
+  max width */
 
 @media (min-width: 600px) {
     html {
