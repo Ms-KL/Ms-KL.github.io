@@ -6,23 +6,32 @@
         <meta name="description" content="Kristy Leigh Portfolio">
         <meta name="author" content="Kristy Leigh Gray">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- CSS Styles -->
         <link rel="stylesheet" href="styles.css">
         <title>Kristy Leigh | Developer | PROJECTS</title>
+        <!--
+            All assets have been obtained using no-attribute sources and/or designed myself. Out of respect for the OG creator(s) please find supplier list below:
+            
+            LinkedIn icon: https://www.reshot.com/free-svg-icons/item/linkedin-G7YJ8FXBKT/
+            Github icon: https://www.reshot.com/free-svg-icons/item/github-NY46M9DGFU/
+            Email icon: 
+            HTML icon: https://uxwing.com/html-icon/
+            CSS icon: https://uxwing.com/css-icon/
+            Python icon: https://uxwing.com/python-programming-language-icon/
+            Javascript icon: https://uxwing.com/javascript-programming-language-icon/
+            React, Rest, Django icons: https://www.canva.com/
+            She Codes icon: https://shecodes.com.au/
+            Gif: https://www.gyazo.com/
+            webicon https://www.reshot.com/free-svg-icons/item/internet-page-VWBM78R3NU/ 
+        -->
     </head>
 
 
     <body id="body-projects">
+        <!-------- HEADER -------->
         <header>
+            <!-------- logo -------->
             <a href="index.html"><img id="logo" src="images/logo.png" alt=""></a>
-
-            <!-- SOCIAL BLOCK OF LINKS
-                flexbox, top right corner... sticky
-                source: linkedin and github icons. style with css
-                Source:
-                LinkedIn icon: https://www.reshot.com/free-svg-icons/item/linkedin-G7YJ8FXBKT/
-                Github icon: https://www.reshot.com/free-svg-icons/item/github-NY46M9DGFU/
-            -->
+            <!-------- SOCIAL BLOCK -------->
             <div class="header-link-block">
                 <div id="social-block">
                     <a href="https://www.linkedin.com/in/kristyleighgray/" target="_blank" id="linkedin"><img class="social-icon" src="images/linkedin-icon.svg" alt="Linkedin Icon"></a>
@@ -30,37 +39,25 @@
                     <a href="mailto:thekristyleigh+contact@gmail.com" target="_blank" id="email"><img class="social-icon" src="images/email-icon.svg" alt="Email Icon"></a>
                 </div>
 
-            <!-- NAVIGATION
-                flexbox and style as buttons and add gaps
-                right side location, inline with bottom of logo
-                point skills to section in about page
-            -->
+            <!-------- NAV BLOCK-------->
             <div id="nav-block">
                 <nav>
+                    <!-------- ROW -------->
                     <div class="nav-row">
                         <button class="nav-button" id="about-button"><a class="button-link" href="about.html">About</a></button>
                         <button class="nav-button" id="projects-button"><a class="button-link"  href="projects.html">Projects</a></button>
                     </div>
+                    <!-------- ROW -------->
                     <div class="nav-row">
                         <button class="nav-button" id="skills-button"><a class="button-link"  href="about.html#skills">Skills</a></button>
                         <button class="nav-button" id="contact-button"><a class="button-link" href="contact.html">Contact</a></button>
                     </div>
-
-                    <!-- <a class="nav-item" href="about.html">About</a>
-                    <a class="nav-item" href="projects.html">Projects</a>
-                    <a class="nav-item" href="about.html#skills">Skills</a>
-                    <a class="nav-item" href="contact.html">Contact</a> -->
-
                 </nav>
             </div>
-            <!-- </div> -->
         </header>
 
         <main>
-            <!-- BANNER
-                Center, coloured background, call to action button
-                Write copy.
-            -->
+            <!-------- SECTION: BANNER -------->
             <section>
                 <div id="hero">
                     <h1>Projects</h1>
@@ -69,23 +66,22 @@
                 </div>
             </section>
 
-            <!-- PROJECT BLOCK
-            Source: webicon https://www.reshot.com/free-svg-icons/item/internet-page-VWBM78R3NU/ 
-            -->
-
+            <!-------- SECTION: PROJECT BLOCK -------->
             <section id="project-block">
                 <div class="project-container">
-
-                    <!-- PORTFOLIO CARD -->
+                    <!-------- PORTFOLIO ROW -------->
                     <div class="project-row">
                         <div class="project-card" id="project-card">
+                            <!-------- image -------->
                             <img class="project-icon" id="project-portfolio" src="images/project-portfolio-demo.gif" alt="">
                             <div class="project-content-block">
+                                <!-------- text -------->
                                 <div class="project-text">
                                     <h2>HTML CSS Project</h2>
                                     <p>Portfolio Project: Live<br>
                                     She Codes Plus project focussing on the exploration and application of responsive HTML and CSS. Process included wireframing with Figma, asset sourcing using no-attribute providers, asset design using Canva and hosting using GitHub. </p>
                                 </div>
+                                <!-------- icons -------->
                                 <div class="tech-block">
                                     <img id="shecodes-icon" src="images/shecodes-icon.png" alt="shecodes icon">
                                     <a href="https://github.com/Ms-KL/Ms-KL.github.io" target="_blank" id="github"><img class="icon-animate" src="images/github-icon.svg" alt="Github Icon"></a>
@@ -97,17 +93,20 @@
                         </div>
                     </div>
 
-                    <!-- PYTHON CARD -->
+                    <!-------- PYTHON ROW -------->
                     <div class="project-row">
                         <div class="project-card" id="python-card">
+                            <!-------- image -------->
                             <img class="project-icon" id="project-python" src="images/project-python.png" alt="">
                             <div class="project-content-block">
+                                <!-------- text -------->
                                 <div class="project-text">
                                     <h2>Python Project </h2>
                                     <p>Weather Project: ETA 20th November 2022.<br>
                                     She Codes Plus project utilising Python programming language. Project commences 25th October 2022.
                                     </p>
                                 </div>
+                                <!-------- icons -------->
                                 <div class="tech-block">
                                     <img id="shecodes-icon" src="images/shecodes-icon.png" alt="shecodes icon">
                                     <a href="https://github.com/Ms-KL" target="_blank" id="github"><img class="icon-animate" src="images/github-icon.svg" alt="Github Icon"></a>
@@ -117,17 +116,20 @@
                             </div>
                         </div>
                     </div>
-                    <!-- DJANGO CARD -->
+                    <!-------- DJANGO ROW -------->
                     <div class="project-row">
                         <div class="project-card" id="django-card">
+                            <!-------- image -------->
                             <img class="project-icon" id="project-django" src="images/project-django.png" alt="">
                             <div class="project-content-block">
+                                <!-------- text -------->
                                 <div class="project-text">
                                     <h2>Django Project </h2>
                                     <p>News Project: ETA 18 December 2022<br>
                                         She Codes Plus project utilising Python programming language and Django. Project Commences December 2022.
                                     </p>
                                 </div>
+                                <!-------- icons -------->
                                 <div class="tech-block">
                                     <img id="shecodes-icon" src="images/shecodes-icon.png" alt="shecodes icon">
                                     <a href="https://github.com/Ms-KL" target="_blank" id="github"><img class="icon-animate" src="images/github-icon.svg" alt="Github Icon"></a>
@@ -139,17 +141,20 @@
                         </div>
                     </div>
 
-                    <!-- DJANGO REST CARD -->
+                    <!-------- DJANGO REST ROW -------->
                     <div class="project-row">
                         <div class="project-card" id="django-rest-card">
+                            <!-------- image -------->
                             <img class="project-icon" id="project-django-rest" src="images/project-django-rest.png" alt="">
                             <div class="project-content-block">
+                                <!-------- text -------->
                                 <div class="project-text">
                                     <h2>Django Rest Framework (DRF) Project </h2>
                                     <p>Crowdfunding Project: ETA 29 January 2023<br>
                                         She Codes Plus Project utilising a Django REST Framework. Project Commences January 2023.
                                     </p>
                                 </div>
+                                <!-------- icons -------->
                                 <div class="tech-block">
                                     <img id="shecodes-icon" src="images/shecodes-icon.png" alt="shecodes icon">
                                     <a href="https://github.com/Ms-KL" target="_blank" id="github"><img class="icon-animate" src="images/github-icon.svg" alt="Github Icon"></a>
@@ -162,17 +167,20 @@
                         </div>
                     </div>
                     
-                    <!-- JAVASCRIPT REACT CARD -->
+                    <!-------- JAVASCRIPT REACT ROW -------->
                     <div class="project-row">
                         <div class="project-card" id="javascript-react-card">
+                            <!-------- image -------->
                             <img class="project-icon" id="project-javascript-react" src="images/project-javascript-react.png" alt="">
                             <div class="project-content-block">
+                                <!-------- text -------->
                                 <div class="project-text">
                                     <h2>Javascript React Project </h2>
                                     <p>Crowdfunding App Project: ETA 5 March 2023<br>
                                         She Codes Plus project focussed on creating an app based on the DRF Crowdfunding project, utilising Javascript and React. Project commences February 2023.
                                     </p>
                                 </div>
+                                <!-------- icons -------->
                                 <div class="tech-block">
                                     <img id="shecodes-icon" src="images/shecodes-icon.png" alt="shecodes icon">
                                     <a href="https://github.com/Ms-KL" target="_blank" id="github"><img class="icon-animate" src="images/github-icon.svg" alt="Github Icon"></a>
@@ -186,8 +194,8 @@
                 </div>
             </section>
         </main> 
-
-        <!-- FOOTER -->
+        
+        <!-------- FOOTER -------->
         <footer>
             <p> &copy; Kristy Leigh Gray 2022</p>
         </footer>

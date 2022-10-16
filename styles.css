@@ -1,5 +1,5 @@
 
-/* -------------- CSS: all pages -------------- */
+/* -------------- ALL pages -------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap');
 
@@ -26,13 +26,15 @@ footer {
     font-size: .75rem;
 }
 
-/* HEADER FORMATTING */
+/* -------------- HEADER -------------- */
 
 header {
     display: flex;
     justify-content: space-between;
     height: 100px;
 }
+
+/* -------------- LOGO -------------- */
 
 #logo {
     width: 70px;
@@ -62,7 +64,7 @@ header {
     }
 }
 
-
+/* -------------- SOCIAL BLOCK & ICONS (throughout) -------------- */
 
 .social-icon {
     width: 25px;
@@ -91,6 +93,8 @@ header {
     justify-content: flex-end;
     gap: 10px;
 }
+
+/* -------------- NAV BLOCK & CTA BUTTONS (in banner) -------------- */
 
 .nav-button, .cta-button {
     padding: 5px;
@@ -121,9 +125,26 @@ header {
     width: 100%;
 }
 
+.cta-button {
+    margin: auto;
+    background-color: white;
+    line-height: 1rem;
+}
 
+.button-link {
+    padding: 5px;
+}
 
-/* BANNER FORMATTING */
+.button-link:hover {
+    color: #fff;
+}
+
+.cta-button:hover, .nav-button:hover {
+    background-color: #000000;
+    transition: all 0.5s;
+}
+
+/* -------------- BANNER -------------- */
 
 #hero {
     padding: 15px;
@@ -152,38 +173,13 @@ h1 {
     margin: auto;
 }
 
-.cta-button {
-    margin: auto;
-    background-color: white;
-    line-height: 1rem;
-}
-
-.button-link {
-    padding: 5px;
-}
-
-.button-link:hover {
-    color: #fff;
-}
-
-.cta-button:hover, .nav-button:hover {
-    background-color: #000000;
-    transition: all 0.5s;
-}
-
-/* -------------- CSS: HOMEPAGE & ABOUT --------------  */
-
-/* CARD FORMATTING */
+/* -------------- COMMON ICONS, IMAGES, BUTTONS & HOVER -------------- */
 
 #body-homepage #kristy-toon, #body-projects .project-icon {
     object-fit: cover;
     }
 
-.icon-animate:hover {
-    filter: invert(72%) sepia(75%) saturate(2949%) hue-rotate(349deg) brightness(100%) contrast(91%);
-}
-
-#kristy-toon, .icon-animate {
+#kristy-toon, #body-projects .icon-animate {
     animation: hithere 3s ease infinite;
 }
 @keyframes hithere {
@@ -219,6 +215,20 @@ h1 {
     box-shadow: 0px 4px 5px 0 lightgray,0px 6px 20px 0 lightgray;
 }
 
+#body-projects .tech-block img {
+    height: 30px;
+    margin: 3px;
+}
+
+#body-homepage h2:hover, #body-contact h3:hover {
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;;
+    background-color: #F2951D;
+}
+
+/* -------------- COMMON BLOCKS, FLEX & CARDS -------------- */
+
 #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container, #body-projects .project-container {
     width: 100%;
     padding: 0;
@@ -240,22 +250,11 @@ h1 {
     margin-block-end: .5em;
 }
 
-#body-homepage h2:hover, #body-contact h3:hover {
-    color: #fff;
-    font-weight: 600;
-    border-radius: 10px;;
-    background-color: #F2951D;
+#body-about #skills-block h2, #body-contact h2 {
+    text-align: center;
 }
 
-#body-projects .tech-block img {
-    height: 30px;
-    margin: 3px;
-}
-
-
-/* -------------- CSS: ABOUT & CONTACT PAGES --------------  */
-
-/* CARD FORMATTING */
+/* -------------- SPECIFIC FORMATTING --------------  */
 
 #body-about .card-icon {
     width: 30vh;
@@ -267,13 +266,11 @@ h1 {
     text-align: center;
 }
 
-#body-about #skills-block h2, #body-contact h2 {
-    text-align: center;
+#body-projects .icon-animate:hover {
+    filter: invert(72%) sepia(75%) saturate(2949%) hue-rotate(349deg) brightness(100%) contrast(91%);
 }
 
-/* -------------- CSS: CONTACT PAGE ONLY --------------  */
-
-/* FORM FORMATTING */
+/* --------------  CONTACT FORM --------------  */
 
 
 #contact-block {
@@ -336,18 +333,27 @@ h1 {
 
 /* -------------- MEDIA QUERIES --------------  */
 
-/* Breakpoints
-  small phone min 320px | default | eg iphone 5
-  large phone max 600px
-  tablet phone max 768px
-  tablet and small desktop max 1024px
-  max width */
+/* 
+    Breakpoints
+    ->  default: designed for mobile
+        small phone 280px 320px | eg galaxy fold + iphone 5
+        large phone max 599px
+    ->  min 600px:
+        portrait tablets & landscape phones
+    ->  min 768px:
+        landscape tablets & small desktop
+    ->  min 1024px:
+        desktops
+    ->  max 1300px: 
+        large displays
+*/
 
 @media (min-width: 600px) {
     html {
         font-size: 18px;
     }
 
+    /* remove row formatting to enable flexbox below */
     #body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
         display:contents;
         }   
@@ -366,6 +372,7 @@ h1 {
         margin: 7px;
     }
 
+    /* flexbox */
     #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container {
         width: 100%;
         padding: 0;

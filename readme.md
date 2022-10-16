@@ -7,11 +7,23 @@ This is portfolio was created by Kristy Leigh using HTML and CSS, as a project f
 <br>
 <br>
 <h3>Wireframes:</h3>
-Portfolio was designed with responsiveness in mind, using <a href="https://www.figma.com/">Figma</a> wireframe program. Mobile, Tablet and Desktop were considered for each page:
-<li><a href="screenshots/wireframe-homepage.pdf">Home page wireframe</a>
-<li><a href="screenshots/wireframe-aboutpage.pdf">About page wireframe</a>
-<li><a href="screenshots/wireframe-projects.pdf">Projects page wireframe</a>
-<li><a href="screenshots/wireframe-contactpage.pdf">Contact page wireframe</a>
+Portfolio was designed with responsiveness in mind, using <a href="https://www.figma.com/">Figma</a> wireframe program. Mobile, Tablet and Desktop were considered for each page. Note: Skills nav link points to a section of the about page.
+
+<br>
+<h4><a href="screenshots/wireframe-homepage.png">Home page wireframe</a></h4>
+<img src="Screenshots/wireframe-homepage.png" alt="home page wireframe">
+
+<br>
+<h4><a href="screenshots/wireframe-aboutpage.pdf">About page wireframe</a></h4>
+<img src="Screenshots/wireframe-aboutpage.png" alt="about page wireframe">
+
+<br>
+<h4><a href="screenshots/wireframe-projects.pdf">Projects page wireframe</a></h4>
+<img src="Screenshots/wireframe-projectspage.png" alt="project page wireframe">
+
+<br>
+<h4><a href="screenshots/wireframe-contactpage.pdf">Contact page wireframe</a></h4>
+<img src="Screenshots/wireframe-contactpage.png" alt="contact page wireframe">
 
 <br>
 <h3>Resources / Attribution Credits:</h3>

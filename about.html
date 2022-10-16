@@ -6,24 +6,30 @@
         <meta name="description" content="Kristy Leigh Portfolio">
         <meta name="author" content="Kristy Leigh Gray">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- CSS Styles -->
         <link rel="stylesheet" href="styles.css">
         <title>Kristy Leigh | Developer | ABOUT</title>
+        <!--
+            All assets have been obtained using no-attribute sources and/or designed myself. Out of respect for the OG creator(s) please find supplier list below:
+            
+            LinkedIn icon: https://www.reshot.com/free-svg-icons/item/linkedin-G7YJ8FXBKT/
+            Github icon: https://www.reshot.com/free-svg-icons/item/github-NY46M9DGFU/
+            Email icon: 
+            Toon created by AI: https://imagetocartoon.com/#cartoonize
+            HTML icon: https://uxwing.com/html-icon/
+            CSS icon: https://uxwing.com/css-icon/
+            Python icon: https://uxwing.com/python-programming-language-icon/
+            Javascript icon: https://uxwing.com/javascript-programming-language-icon/
+            React, Rest, Django icons: https://www.canva.com/
+        -->
     </head>
 
 
     <body id="body-about">
+        <!-------- HEADER -------->
         <header>
+            <!-------- logo -------->
             <a href="index.html"><img id="logo" src="images/logo.png" alt=""></a>
-
-            <!-- SOCIAL BLOCK
-                LinkedIn icon: 
-                https://www.reshot.com/free-svg-icons/item/linkedin-G7YJ8FXBKT/
-                Github icon: 
-                https://www.reshot.com/free-svg-icons/item/github-NY46M9DGFU/
-                Email icon:
-                INSERT
-            -->
+            <!-------- SOCIAL BLOCK -------->
             <div class="header-link-block">
                 <div id="social-block">
                     <a href="https://www.linkedin.com/in/kristyleighgray/" target="_blank" id="linkedin"><img class="social-icon" src="images/linkedin-icon.svg" alt="Linkedin Icon"></a>
@@ -31,31 +37,25 @@
                     <a href="mailto:thekristyleigh+contact@gmail.com" target="_blank" id="email"><img class="social-icon" src="images/email-icon.svg" alt="Email Icon"></a>
                 </div>
 
-            <!-- NAVIGATION
-                flexbox and style as buttons and add gaps
-                right side location, inline with bottom of logo
-                point skills to section in about page
-            -->
+            <!-------- NAV BLOCK-------->
             <div id="nav-block">
                 <nav>
+                    <!-------- ROW -------->
                     <div class="nav-row">
                         <button class="nav-button" id="about-button"><a class="button-link" href="about.html">About</a></button>
                         <button class="nav-button" id="projects-button"><a class="button-link"  href="projects.html">Projects</a></button>
                     </div>
+                    <!-------- ROW -------->
                     <div class="nav-row">
                         <button class="nav-button" id="skills-button"><a class="button-link"  href="about.html#skills">Skills</a></button>
                         <button class="nav-button" id="contact-button"><a class="button-link" href="contact.html">Contact</a></button>
                     </div>
-
                 </nav>
             </div>
         </header>
 
         <main>
-            <!-- BANNER
-                Center, coloured background, call to action button
-                Write copy.
-            -->
+            <!-------- SECTION: BANNER -------->
             <section>
                 <div id="hero">
                     <h1>Who is Kristy Leigh?</h1>
@@ -64,8 +64,7 @@
                 </div>
             </section>
 
-            <!-- ABOUT BLOCK -->
-        
+            <!-------- SECTION: ABOUT BLOCK -------->
             <section id="about-block">
                 <div class="about-container">
                     <img class="card-icon" id="kristy-toon" src="images/kristy-toon.png" alt="Cartoon portrait of Kristy Leigh made by X">
@@ -78,52 +77,47 @@
                 </div>
             </section>
 
-            <!-- SOCIAL BLOCK 
-                HTML icon: 
-                https://uxwing.com/html-icon/
-                CSS icon: 
-                https://uxwing.com/css-icon/
-                Python icon: 
-                https://uxwing.com/python-programming-language-icon/
-                Javascript icon: 
-                https://uxwing.com/javascript-programming-language-icon/
-            -->
+            <!-------- SECTION: SKILLS BLOCK --------> 
             <section id="skills-block">
-                <!-- SKILLS -->
+                <!-------- skills -------->
                 <div id="skills-card">
                     <a id="skills"><h2>Skills</h2></a>
                     <div class="skills-container">
+                        <!-------- row -------->
                         <div class="skills-row">
                             <img class="skills-icon" id="html-icon" src="images/html-icon.png" alt="html icon">
                             <img class="skills-icon" id="css-icon" src="images/css-icon.png" alt="css icon">
                         </div>
+                        <!-------- row -------->
                         <div class="skills-row">
                             <img class="skills-icon" id="python-icon" src="images/python-icon.png" alt="python icon">
                             <img class="skills-icon" id="javascript-icon"  src="images/javascript-icon.png" alt="javascript icon">
                         </div>
+                        <!-------- row -------->
                         <div class="skills-row">
                             <img class="skills-icon" id="react-icon" src="images/react-icon.png" alt="react icon">
                             <img class="skills-icon" id="django-icon"  src="images/django-icon.png" alt="django icon">
                         </div>
+                        <!-------- row -------->
                         <div class="skills-row">
                             <img class="skills-icon" id="rest-icon" src="images/rest-icon.png" alt="rest icon">
                         </div>
                     </div>
                 </div>
-                <!-- CERTIFICATIONS -->
+                <!-------- certifications -------->
                 <div id="certs-card">
                     <h2>Certifications</h2>
                     <div class="certs-container">
+                        <!-------- row -------->
                         <div class="certs-row">
                             <img class="certs-icon" id="ms-azure-ai-fundamentals" src="images/ms-azure-ai-fundamentals-cert.png" alt="Microsoft Certification badge for Azure AI Fundamentals">
                         </div>
                     </div>
                 </div>
             </section>
-
         </main> 
 
-        <!-- FOOTER -->
+        <!-------- FOOTER -------->
         <footer>
             <p> &copy; Kristy Leigh Gray 2022</p>
         </footer>
