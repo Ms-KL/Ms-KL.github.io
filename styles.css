@@ -220,8 +220,8 @@ h1 {
 }
 
 #body-projects .project-icon {
-    margin: 20px;
-    width: 250px;
+    margin:15px;
+    width: 300px;
     box-shadow: 0px 4px 5px 0 lightgray,0px 6px 20px 0 lightgray;
 }
 
