@@ -68,6 +68,8 @@ header {
     }
 }
 
+
+
 .social-icon {
     width: 25px;
     height: 25px;
@@ -183,15 +185,20 @@ h1 {
     object-fit: cover;
     }
 
-#kristy-toon {
+
+.icon-animate:hover {
+    filter: invert(72%) sepia(75%) saturate(2949%) hue-rotate(349deg) brightness(100%) contrast(91%);
+}
+
+#kristy-toon, .icon-animate {
     animation: hithere 3s ease infinite;
 }
 @keyframes hithere {
-    30% { transform: scale(1); }
-    40%, 60% { transform: rotate(-20deg) scale(1); }
-    50% { transform: rotate(20deg) scale(1); }
-    70% { transform: rotate(0deg) scale(1); }
-    100% { transform: scale(1); }
+    30% { transform: scale(1.05); }
+    40%, 60% { transform: rotate(-20deg) scale(1.05); }
+    50% { transform: rotate(20deg) scale(1.05); }
+    70% { transform: rotate(0deg) scale(1.05); }
+    100% { transform: scale(1.05); }
 }
 
 #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
@@ -221,11 +228,12 @@ h1 {
     display: flex;
     align-items: center;
 }
-#body-homepage h2, #body-about h2, #body-contact h3 {
+#body-homepage h2, #body-about h2, #body-contact h3, #body-projects h2 {
     font-size: 1.3rem;
     margin-block-start: .5em;
     margin-block-end: .5em;
 }
+
 #body-homepage h2:hover, #body-contact h3:hover {
     color: #fff;
     font-weight: 600;
@@ -233,9 +241,11 @@ h1 {
     background-color: #F2951D;
 }
 
-#body-projects #tech-block img {
-    width: 30px;
+#body-projects .tech-block img {
+    height: 30px;
+    margin: 3px;
 }
+
 
 
 /* -------------- CSS: ABOUT & CONTACT PAGES --------------  */
@@ -351,8 +361,6 @@ h1 {
         margin: 7px;
     }
 
-
-
     #body-homepage .card-container, #body-about .skills-container, #body-about .certs-container, #body-contact .connect-container {
         width: 100%;
         padding: 0;
@@ -382,6 +390,7 @@ h1 {
         max-width: 130px;
     }
 
+}
 
 @media (min-width: 768px) {
     html {
@@ -397,6 +406,7 @@ h1 {
         width: 18vh;
         max-width: 140px;
         }
+}
 
 @media (min-width: 1024px) {
     html {
@@ -419,5 +429,4 @@ h1 {
     #body-homepage #card-block, #body-about #skills-block, #body-contact #connect-block, #body-projects #project-block {
         max-width: 1300px;
         }
-    
 }
