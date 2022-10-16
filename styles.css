@@ -218,7 +218,7 @@ h1 {
     padding: 0;
     text-align: center;
 }
-#body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row {
+#body-homepage .card-row, #body-about .skills-row, #body-about .certs-row, #body-contact .connect-row, #body-projects .project-row {
     width: 95%;
     padding: 15px;
     display: flex;
