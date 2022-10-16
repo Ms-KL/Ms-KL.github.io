@@ -7,7 +7,7 @@
 
 /* -------------- CSS: all pages -------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap');
 
 html {
     font-size: 17px;
@@ -185,7 +185,6 @@ h1 {
     object-fit: cover;
     }
 
-
 .icon-animate:hover {
     filter: invert(72%) sepia(75%) saturate(2949%) hue-rotate(349deg) brightness(100%) contrast(91%);
 }
@@ -201,10 +200,23 @@ h1 {
     100% { transform: scale(1.05); }
 }
 
-#body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
+#body-homepage .card-icon, #body-contact .connect-icon {
     width: 15vh;
     margin: 5px;
     max-width: 120px;
+}
+
+#body-about .skills-icon, #body-about .certs-icon {
+    height: 15vh;
+    margin: 2px;
+}
+
+#body-about .skills-icon {
+    max-height: 90px;
+}
+
+#body-about .certs-icon {
+    max-height: 120px;
 }
 
 #body-projects .project-icon {
@@ -229,7 +241,7 @@ h1 {
     align-items: center;
 }
 #body-homepage h2, #body-about h2, #body-contact h3, #body-projects h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-block-start: .5em;
     margin-block-end: .5em;
 }
@@ -245,7 +257,6 @@ h1 {
     height: 30px;
     margin: 3px;
 }
-
 
 
 /* -------------- CSS: ABOUT & CONTACT PAGES --------------  */
@@ -386,8 +397,17 @@ h1 {
         align-self: center;
     }
 
-    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
+    #body-homepage .card-icon, #body-contact .connect-icon {
         max-width: 130px;
+    }
+
+    #body-about .skills-icon  {
+        max-height: 60px;
+        padding-bottom: 20px;
+    }
+
+    #body-about .certs-icon {
+        max-height: 100px;
     }
 
 }
@@ -402,10 +422,18 @@ h1 {
         height: 90px;
     }
 
-    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact #connect-icon {
+    #body-homepage .card-icon, #body-contact #connect-icon {
         width: 18vh;
         max-width: 140px;
         }
+    
+    #body-about .skills-icon  {
+        max-height: 80px;
+    }
+
+    #body-about .certs-icon {
+        max-height: 120px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -421,10 +449,18 @@ h1 {
     #body-homepage .card-container {
         gap: 5vh;
         }
-    #body-homepage .card-icon, #body-about .skills-icon, #body-about .certs-icon, #body-contact .connect-icon {
+    #body-homepage .card-icon, #body-contact .connect-icon {
         width: 25vh;
         max-width: 150px;
         }
+    
+    #body-about .skills-icon  {
+        max-height: 100px;
+    }
+
+    #body-about .certs-icon {
+        max-height: 140px;
+    }
 
     #body-homepage #card-block, #body-about #skills-block, #body-contact #connect-block, #body-projects #project-block {
         max-width: 1300px;
