@@ -49,10 +49,10 @@ header {
 #logo {
     width: 80px;
     height: 80px;
-    animation-name: spin;
+    /* animation-name: spin;
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation-timing-function: linear;  */
 }
 
 @keyframes spin {
@@ -71,7 +71,7 @@ header {
     height: 25px;
 }
 
-.social-icon:hover, #body-contact .connect-icon:hover {
+.social-icon:hover, #body-contact .connect-icon:hover, #logo:hover {
         animation: gelatine 0.5s infinite;
 }
 
@@ -180,8 +180,9 @@ h1 {
     }
 
 #kristy-toon, #body-projects .icon-animate {
-    animation: hithere 3s ease infinite;
+    animation: hithere 4s ease ;
 }
+
 @keyframes hithere {
     30% { transform: scale(1.05); }
     40%, 60% { transform: rotate(-20deg) scale(1.05); }
