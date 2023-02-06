@@ -1,60 +1,60 @@
-<br>
-<a href="https://ms-kl.github.io/">Kristy Leigh's Portfolio Link</a>
-<br>
-<br>
-<h3>About:</h3>
-This is portfolio was created by Kristy Leigh using HTML and CSS, as a project for the <b><a href="https://www.shecodes.com.au/">She Codes</a> Plus</b> program.
-<br>
-<br>
-<h3>Wireframes:</h3>
-Portfolio was designed with responsiveness in mind, using <a href="https://www.figma.com/">Figma</a> wireframe program. Mobile, Tablet and Desktop were considered for each page. Note: Skills nav link points to a section of the about page.
+# She Codes Plus Project 1: Portfolio Website
+## About:
+This is portfolio was created by Kristy Leigh as a project for the [She Codes Plus](https://www.shecodes.com.au/) program.<br>
+View live portfolio website: [HERE](https://ms-kl.github.io/)
 
-<br>
-<h4><a href="screenshots/wireframe-homepage.png">Home page wireframe</a></h4>
-<img src="Screenshots/wireframe-homepage.png" alt="home page wireframe">
+## Tech & Skills Learned: 
+* HTML
+* CSS
+* Canva (graphics)
+* VS Code
+* Github Desktop
+* Figma
+* Wireframing
 
-<br>
-<h4><a href="screenshots/wireframe-aboutpage.pdf">About page wireframe</a></h4>
-<img src="Screenshots/wireframe-aboutpage.png" alt="about page wireframe">
+## Wireframes:
+Portfolio was designed with responsiveness in mind, using [Figma](https://www.figma.com/) wireframe program. Mobile, Tablet and Desktop were considered for each page.
 
-<br>
-<h4><a href="screenshots/wireframe-projects.pdf">Projects page wireframe</a></h4>
-<img src="Screenshots/wireframe-projectspage.png" alt="project page wireframe">
+1. Home page
+![image](Screenshots/wireframe-homepage.png)
 
-<br>
-<h4><a href="screenshots/wireframe-contactpage.pdf">Contact page wireframe</a></h4>
-<img src="Screenshots/wireframe-contactpage.png" alt="contact page wireframe">
+2. About page
+![image](Screenshots/wireframe-aboutpage.png)
 
-<br>
-<h3>Resources / Attribution Credits:</h3>
+3. Projects page
+![image](Screenshots/wireframe-projectspage.png)
+
+4. Contact page
+![image](Screenshots/wireframe-contactpage.png)
+
+## Resources / Attribution Credits:
 All assets have been obtained using no-attribute sources and/or designed myself.
 Out of respect for the OG creator(s) please find supplier list below:
-<li><a href="https://www.figma.com/">Figma</a>
-<li><a href="https://www.reshot.com/free-svg-icons">Reshot</a>
-<li><a href="https://imagetocartoon.com/#cartoonize">Image to Cartoon</a>
-<li><a href="https://uxwing.com/license/">Uxwing</a>
-<li><a href="https://www.canva.com/">Canva</a>
-<li><a href="https://www.formspree.com/">Formspree</a>
-<li><a href="https://www.gyazo.com/">Gyazo</a>
-<li><a href="https://www.shecodes.com.au/">She Codes</a>
-<li><a href="https://fonts.google.com/">Google Fonts</a>
+* [Figma](https://www.figma.com/)
+* [Reshot](https://www.reshot.com/free-svg-icons)
+* [Image to Cartoon](https://imagetocartoon.com/#cartoonize)
+* [Uxwing](https://uxwing.com/license/)
+* [Canva](https://www.canva.com/)
+* [Formspree](https://www.formspree.com/) 
+* [Gyazo](https://www.gyazo.com/)
+* [She Codes](https://www.shecodes.com.au/)
+* [Google Fonts](https://fonts.google.com/)
 
-<br>
-<h3>Website CSS & Responsiveness:</h3>
+## Website CSS & Responsiveness:
 All portfolio pages have been designed with media queries and specifically chosen elements to ensure responsiveness across all devices. Please find demo gifs below for each page.
 
-<br>
-<h4>Home Page</h4>
-<img src="Screenshots/homepage-demo.gif" alt="demo of homepage">
+1. Home Page
 
-<br>
-<h4>About Page</h4>
-<img src="Screenshots/about-demo.gif">
+    <img src="Screenshots/homepage-demo.gif" alt="demo of homepage">
 
-<br>
-<h4>Project Page</h4>
-<img src="Screenshots/projectpage-demo.gif">
+2. About Page
 
-<br>
-<h4>Contact Page</h4>
-<img src="Screenshots/contact-demo.gif">
+    <img src="Screenshots/about-demo.gif">
+
+3. Project Page
+    
+    <img src="Screenshots/projectpage-demo.gif">
+
+4. Contact Page
+    
+    <img src="Screenshots/contact-demo.gif">
