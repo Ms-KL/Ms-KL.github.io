@@ -1,94 +1,176 @@
 /* -------------- ALL pages -------------- */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 html {
     font-size: 17px;
-    /* font-family: 'Poppins', Arial, sans-serif; */
-    background-color: #000;
+    font-family: 'Quicksand', sans-serif;
+    background-color: lightgray;
 }
 
 body {
-    max-width: 80%;
-
+    max-width: calc(100% - 50px);
+    margin: 0 auto; /* center  */
 }
 
 /* -------------- LOGO -------------- */
 
 #banner {
     width: 40%;
-
+    max-width: 450px;
 }
 
 /* -------------- NAV -------------- */
+/* https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 */
+  /* https://codepen.io/ljc-dev/pen/zYoqbrN */
+  /* https://dev.to/ljcdev/comment/1b8ff */
 
-  
-  .menuItem {
-    display: block;
-    margin: 2rem 4rem;
-    font-size: 1.8rem;
-    color: white;
-    text-decoration: none;
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
   
-  .menuItem:hover {
-    text-decoration: underline;
+  html {
+    scroll-behavior: smooth;
   }
   
-  .hamburger {
+  .topNav {
     position: fixed;
-    z-index: 100;
-    top: 3rem;
-    right: 1rem;
-    padding: 5px;
-    border: black solid 1px;
-    /* background: white; */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    z-index: 1;
+  }
+  
+  .ham {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
     cursor: pointer;
-    border-radius: 10%;
+    color: white;
   }
   
-  .closeIcon {
-    display: none;
+  .menuX {
+    position: absolute;
+    top: 2rem;
+    right: 0.5rem;
+  }
+
+  .menuX {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
   }
   
-  .menu {
+  .sideNav {
     position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+    background: black;
+    width: 370px;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+  }
+  
+  .showNav {
+    transform: translateX(0);
+  }
+  
+  .sideNav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  
+  .sideNav ul li a {
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 1.2rem;
+  }
+  
+  .sideNav ul li a:hover, .sideNav ul li a:focus {
+    border-bottom: 2px solid white;
+  }
+  
+  .overlay {
+    position: fixed;
+    display: none;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 99;
-    background: black;
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
   }
   
-  .showMenu {
-    transform: translateY(0);
+  .showOverlay {
+    display: block;
+  }
+  
+  section {
+
+    height: 40vh;
+    /* display: flex; */
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section:nth-child(even) {
+    background-color: rgb(245, 245, 245);
   }
 
+  #project-block {
+    display: flex;
+    justify-content: start;
+  }
 
-
+  header {
+    margin-top: 3rem; /* Add this to create space between the navigation bar and header */
+  }
 
 /* ----------------Media Queries ------------------*/
 
-@media screen and (min-width: 801px) {
-    .hamburger {
-      display: none;
-    }
-  
-    .menuItem {
-      display: block;
-    }
-  }
-
 @media screen and (max-width: 1060px) {
 #banner {
-    width: 370px;
+    width: 350px;
 
 }
 }
+
+
+
 
