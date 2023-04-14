@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 html {
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Quicksand', sans-serif;
     background-color: lightgray;
 }
@@ -123,7 +123,9 @@ body {
   .sideNav ul li a:hover, .sideNav ul li a:focus {
     border-bottom: 2px solid white;
   }
-  
+
+
+/* --------- Sections ------------*/
   .overlay {
     position: fixed;
     display: none;
@@ -142,28 +144,61 @@ body {
   }
   
   section {
-
-    height: 40vh;
+    /* height: 30vh; */
     /* display: flex; */
-    font-size: x-large;
-    justify-content: center;
+    /* font-size: x-large; */
+    justify-content: center; 
     align-items: center;
   }
   
-  section:nth-child(even) {
+  /* section:nth-child(even) {
     background-color: rgb(245, 245, 245);
-  }
-
-  #project-block {
-    display: flex;
-    justify-content: start;
-  }
+  } */
 
   header {
     margin-top: 3rem; /* Add this to create space between the navigation bar and header */
   }
 
- /* ---------------- Social Icons ------------------*/
+
+  /* ---------------- Project Sections ------------------*/
+
+/* Position the section title on top of the projects container */
+.section-title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-row {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.project-image {
+  /* flex: 1; */
+  margin-right: 30px;
+}
+
+.project-text {
+  flex: 2;
+}
+
+.project-image img {
+  width: 350px;
+  height: auto;
+  border-radius: 4%;
+  box-shadow: 0px 4px 5px 0 grey,0px 6px 20px 0 lightgray;
+}
+
+
+/* ---------------- Social NAV Icons ------------------*/
 
   .social-media-icons {
     margin-left: auto; /* put icons on the right */
@@ -180,13 +215,31 @@ body {
 
 /* ----------------Media Queries ------------------*/
 
+@media only screen and (max-width: 600px) {
+  .section-row {
+    flex-direction: column;
+  }
+  .project-text {
+    margin-top: 10px;
+    width: 350px;
+  }
+
+  /* .project-row {
+    align-items: center;
+  } */
+
+  .project-image {
+    margin-right: 0;
+  }
+
+}
+
+
 @media screen and (max-width: 1060px) {
 #banner {
     width: 350px;
 
 }
 }
-
-
 
 
