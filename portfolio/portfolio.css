@@ -18,6 +18,7 @@ body {
 #banner {
     width: 40%;
     max-width: 450px;
+    margin-right: 20px;
 }
 
 /* -------------- NAV -------------- */
@@ -169,9 +170,15 @@ body {
   margin-bottom: 20px;
 }
 
-.projects-container {
+/* .projects-container {
   display: flex;
   flex-direction: column;
+} */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* sets the container to two columns */
+  grid-gap: 20px; /* adds a gap between grid items */
 }
 
 .section-row {
@@ -179,6 +186,7 @@ body {
   flex-direction: row;
   margin-right: 30px;
   margin-bottom: 30px;
+
 }
 
 .project-image {
@@ -191,7 +199,7 @@ body {
 }
 
 .project-image img {
-  width: 350px;
+  width: 300px;
   height: auto;
   border-radius: 4%;
   box-shadow: 0px 4px 5px 0 grey,0px 6px 20px 0 lightgray;
@@ -215,13 +223,25 @@ body {
 
 /* ----------------Media Queries ------------------*/
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 356px) {
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .project-text {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
   .section-row {
     flex-direction: column;
   }
   .project-text {
     margin-top: 10px;
-    width: 350px;
+    /* width: 300px; */
   }
 
   /* .project-row {
@@ -234,10 +254,17 @@ body {
 
 }
 
+@media screen and (max-width: 1315px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* sets the container back to one column */
+  }
+}
 
 @media screen and (max-width: 1060px) {
 #banner {
-    width: 350px;
+    width: 300px;
+    /* height: auto; */
+    margin-top: 10px;
 
 }
 }
