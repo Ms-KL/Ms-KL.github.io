@@ -264,7 +264,7 @@ body {
   
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1315px) {
   .section-row {
     flex-direction: column;
   }
@@ -314,7 +314,10 @@ body {
   }
 }
 
+@media screen and (min-width: 1800px) {
+.projects-container {
+  grid-template-columns: repeat(3, 1fr); /* sets the container to two columns */
+}
 
-
-
+}
 
