@@ -1,0 +1,94 @@
+/* -------------- ALL pages -------------- */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap'); */
+
+html {
+    font-size: 17px;
+    /* font-family: 'Poppins', Arial, sans-serif; */
+    background-color: #000;
+}
+
+body {
+    max-width: 80%;
+
+}
+
+/* -------------- LOGO -------------- */
+
+#banner {
+    width: 40%;
+
+}
+
+/* -------------- NAV -------------- */
+
+  
+  .menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+  
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 3rem;
+    right: 1rem;
+    padding: 5px;
+    border: black solid 1px;
+    /* background: white; */
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  
+  .closeIcon {
+    display: none;
+  }
+  
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  
+  .showMenu {
+    transform: translateY(0);
+  }
+
+
+
+
+/* ----------------Media Queries ------------------*/
+
+@media screen and (min-width: 801px) {
+    .hamburger {
+      display: none;
+    }
+  
+    .menuItem {
+      display: block;
+    }
+  }
+
+@media screen and (max-width: 1060px) {
+#banner {
+    width: 370px;
+
+}
+}
+
