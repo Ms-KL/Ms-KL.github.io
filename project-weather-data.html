@@ -1,0 +1,377 @@
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Kristy Leigh • Project 1</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="Ms-KL, Kristy Leigh, python, javascript, html, css, django, django rest framework, drf, react" />
+
+    <!-- Improve your SEO by adding a small description of you -->
+    <meta name="description" content="Kristy Leigh • Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://ms-kl.github.io/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Kristy Leigh • Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Kristy Leigh's Developer Portfolio" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+    <script 
+    src="./javascript/hamburger.js"
+    ></script>
+  </head>
+  <body>
+    <!-------- TOP NAV -------->       
+    <nav class="topNav">
+        <button class="ham">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                />
+            </svg>
+        </button>
+
+        <!-------- SOCIALS --------> 
+        <div class="social-media-icons">
+            <a href="https://www.linkedin.com/in/kristyleighgray/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com/Ms-KL" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto: thekristyleigh@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://linktr.ee/kristyleigh" target="_blank"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <!-------- SIDE NAV -------->   
+    <nav class="sideNav">
+        <button class="menuX">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+            />
+            </svg>
+        </button>
+        <ul>
+        <li><a href="#about" class="menuLink" aria-label="go back to top">
+            <i class="fa fa-angle-up fa-2x"></i>
+        </a></li>
+        <li><a class="menuLink" href="index.html">Home</a></li>
+        <li><a class="menuLink" href="index.html#about">About</a></li>
+        <li><a class="menuLink" href="index.html#projects">Projects</a></li>
+        <li><a class="menuLink" href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about"  style="margin-top: 4rem;">
+      <div class="container">
+        <h2 class="section-title">Weather Data Processing</h2>
+        <p class="project-wrapper__text-info" style="font-size: 2rem;">
+          <strong>PYTHON</strong>
+        </p>
+        <br>
+        <div class="about-wrapper__info">
+          <p class="about-wrapper__info-text">
+            The goal of this project was to process and convert csv files into meaningful text-based summaries. Using Object Oriented Programming I developed nine user defined functions to complete this task. Each function's output also passed the associated unit tests.
+          </p>
+        </div>
+        <br>
+        <br>
+        <span class="about-wrapper__cta">
+            <a href="https://github.com/Ms-KL/she-codes-python-weather-project-Ms-KL" target="_blank" class="cta-btn cta-btn--resume"
+              >Repo</a
+            >
+        </span>
+
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text" id="weather-data-process">The Process</h2>
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Starter Code</h3>
+            <p class="project-wrapper__text-info">
+              Nine empty functions were provided with a docstring describing the required program to be developed.
+            </p>
+          </div>
+          <div class="project-wrapper__image">
+                <img
+                  src="./assets/weather-code-initial.png"
+                  class="img-fluid"
+                  alt="Weather Project Starter Code"
+                  width="100%"
+                
+                />
+          </div>
+        </article>
+        <!-- /END Project -->
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Unit Tests</h3>
+            <p class="project-wrapper__text-info">
+              A unit test for each function was provided, to enable efficient and comprehensive testing for our program.
+            </p>
+          </div>
+
+          <div class="project-wrapper__image">
+                <img
+                  src="./assets/weather-tests.png"
+                  class="img-fluid"
+                  alt="Weather Project Tests"
+                  width="100%"
+                />
+          </div>
+        </article>
+        <!-- /END Project -->
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Expected Output</h3>
+            <p class="project-wrapper__text-info">
+              Expected output text summaries were provided, to assist in shaping the return statement for each function.
+            </p>
+          </div>
+
+          <div class="project-wrapper__image">
+
+                <img
+                  src="./assets/weather-tests-expected-output.png"
+                  class="img-fluid"
+                  alt="Weather Project Expected Output"
+                  width="100%"
+                />
+          </div>
+        </article>
+        <!-- /END Project -->
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Kristy's Playground</h3>
+            <p class="project-wrapper__text-info">
+              I created a code "playground" for each function, to provide an isolated environment to test and refactor each function.
+            </p>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="https://github.com/Ms-KL/she-codes-python-weather-project-Ms-KL/tree/main/working_files" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img
+                  src="./assets/weather-playground.png"
+                  class="img-fluid"
+                  alt="Weather Project Playground"
+                  width="1366"
+                  height="767"
+                />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Confirmed Functions</h3>
+            <p class="project-wrapper__text-info">
+              Once functions passed the associated tests within the function playground, the code was transferred to the main weather.py program.
+            </p>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="https://github.com/Ms-KL/she-codes-python-weather-project-Ms-KL/blob/main/weather.py" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img
+                  src="./assets/weather-code.png"
+                  class="img-fluid"
+                  alt="Weather Project Code"
+                  width="1366"
+                  height="767"
+                />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Shell Output</h3>
+            <p class="project-wrapper__text-info">
+              Each function was run within the weather.py program to confirm alignment with expected output.
+            </p>
+          </div>
+
+          <div class="project-wrapper__image">
+
+                <img
+                  src="./assets/weather-tests-actual-output.png"
+                  class="img-fluid"
+                  alt="Weather Project Code"
+                  width="100%"
+                />
+          </div>
+        </article>
+        <!-- /END Project -->
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Function Testing</h3>
+            <p class="project-wrapper__text-info">
+              Finally, the weather.py program and all nine functions were tested using the run_tests.py program.
+            </p>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="https://github.com/Ms-KL/she-codes-python-weather-project-Ms-KL/blob/main/run_tests.py" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img
+                  src="./assets/weather-result.png"
+                  class="img-fluid"
+                  alt="Weather Project Code"
+                  width="1366"
+                  height="767"
+                />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">Insert stuff here about being technical and non technical, passionate about self learning, database schemas, d&d etc, coffee, whisky, pinball etc </p>
+          <a href="mailto: thekristyleigh@gmail.com" class="cta-btn cta-btn--resume">Talk nerdy to me</a>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#about" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/kristyleighgray/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.github.com/Ms-KL"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="mailto: thekristyleigh@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Template by
+          <a
+            href="https://github.com/AnilSeervi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Anil Seervi</a
+          > • Customisation by           
+          <a
+          href="https://github.com/Ms-KL"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Kristy Leigh</a>
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
