@@ -1,0 +1,62 @@
+/* import fonts */
+
+html {
+    /* insert code */
+}
+
+
+
+/* IMAGE FORMATTING */
+
+#kristy-toon {
+        object-fit: cover;
+        /* fits container + clips content to keep aspect ratio */
+        /* border-radius: 50%; */
+        /* rounds image */
+        width: 150px;
+        /* sets width and height changes based on this */
+        height: 150px;
+        /* vh: changes size based width and size of screen */
+}
+
+.nav-icon {
+    width: 150px;
+    height: 150px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* BLOCK FORMATTING */
+
+/* header {
+    display: flex; */
+    /* justify-content: space-between; */
+}
+
+/* div#link-block {
+    flex-direction: column;
+}
+
+#social-block {
+    justify-content: flex-end;
+} */
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    /* align-items:flex-end; */
+    /* position:center;
+    padding:5px;
+    font-size:20px;
+    width:300px;
+    justify-content: flex-end;
+    align-self: baseline; */
+}

@@ -1,0 +1,323 @@
+/* -------------- ALL pages -------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+html {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: lightgray;
+}
+
+body {
+    max-width: calc(100% - 50px);
+    margin: 0 auto; /* center  */
+}
+
+/* -------------- LOGO -------------- */
+
+#banner {
+    width: 40%;
+    max-width: 450px;
+    /* margin-right: 20px; */
+    margin: 20px 20px 20px 0;
+    min-width: 275px;
+}
+
+/* -------------- NAV -------------- */
+/* https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 */
+  /* https://codepen.io/ljc-dev/pen/zYoqbrN */
+  /* https://dev.to/ljcdev/comment/1b8ff */
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .topNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    z-index: 1;
+    padding: 10px;
+  }
+  
+  .ham {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .menuX {
+    position: absolute;
+    top: 2rem;
+    right: 0.5rem;
+  }
+
+  .menuX {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+    background: black;
+    width: 300px;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+  }
+  
+  .showNav {
+    transform: translateX(0);
+  }
+  
+  .sideNav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  
+  .sideNav ul li a {
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 1.2rem;
+  }
+  
+  .sideNav ul li a:hover, .sideNav ul li a:focus {
+    border-bottom: 2px solid white;
+  }
+
+
+/* --------- Sections ------------*/
+  .overlay {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .showOverlay {
+    display: block;
+  }
+  
+  section {
+    /* height: 30vh; */
+    /* display: flex; */
+    /* font-size: x-large; */
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  /* section:nth-child(even) {
+    background-color: rgb(245, 245, 245);
+  } */
+
+  header {
+    margin-top: 3rem; /* Add this to create space between the navigation bar and header */
+  }
+
+
+  /* ---------------- Project Sections ------------------*/
+
+/* Position the section title on top of the projects container */
+.section-title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+/* .projects-container {
+  display: flex;
+  flex-direction: column;
+} */
+
+
+
+.section-row {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-container .section-row {
+  /* background-color: white;
+  padding: 20px;
+  border-radius: 30px; */
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 5px 0 grey,0px 6px 20px 0 lightgray;
+  min-height: 160px;
+  flex-basis: 32%;
+  flex-grow: 1;
+}
+
+.project-image {
+  /* flex: 1; */
+  margin-right: 30px;
+  
+}
+
+.project-text {
+  flex: 2;
+}
+
+.project-image img {
+  /* width: 300px;
+  height: auto;
+  border-radius: 4%;*/
+
+  border-radius: 5px; 
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+/* ---------------- Social NAV Icons ------------------*/
+
+  .social-media-icons {
+    margin-left: auto; /* put icons on the right */
+    display: flex;
+    align-items: center;
+  } 
+  
+  .social-media-icons a {
+    margin: 0 10px;
+    font-size: 1.4rem;
+    color: white;
+  }
+  
+
+/* ----------------Media Queries ------------------*/
+
+@media screen and (max-width: 356px) {
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .project-text {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* sets the container to two columns */
+    grid-gap: 20px; /* adds a gap between grid items */
+  }
+}
+  
+
+
+@media screen and (max-width: 1315px) {
+  .section-row {
+    flex-direction: column;
+  }
+  .project-text {
+    margin-top: 10px;
+    /* width: 300px; */
+  }
+
+  /* .project-row {
+    align-items: center;
+  } */
+
+  .project-image {
+    margin: 0;
+  }
+
+
+}
+
+/* @media screen and (max-width: 1060px) {
+  #banner {
+      min-width: 300px;
+      height: auto;
+      margin: 20px 20px 20px 0;
+  
+  }
+  } */
+
+@media screen and (min-width: 1315px) {
+  .projects-container .section-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .projects-container .section-row .project-image,
+  .projects-container .section-row .project-text {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1315px) {
+  .projects-container .section-row .project-image,
+  .projects-container .section-row .project-text {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+.projects-container {
+  grid-template-columns: repeat(3, 1fr); /* sets the container to two columns */
+}
+
+}
+
