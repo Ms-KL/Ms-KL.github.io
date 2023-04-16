@@ -67,28 +67,62 @@ Have fun creating your portfolio on this template!!! -->
       type="text/javascript"
       src="./javascript/scrollveal.js"
     ></script>
+    <script 
+    src="./javascript/hamburger.js"
+    ></script>
   </head>
   <body>
-    <!-- Hero Section -->
-    <!-- <div id="hero">
-      <section class="container">
-        <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Kristy Leigh</span>
-          <br />
-          I'm a junior developer, excited by data, AI and back-end engineering.
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#contact">Talk nerdy to me</a>
-        </p>
-      </section>
-      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div
-      ></a>
-    </div> -->
-    <!-- /END Hero Section -->
+    <!-------- TOP NAV -------->       
+    <nav class="topNav">
+        <button class="ham">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                />
+            </svg>
+        </button>
+
+        <!-------- SOCIALS --------> 
+        <div class="social-media-icons">
+            <a href="https://www.linkedin.com/in/kristyleighgray/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com/Ms-KL" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto: thekristyleigh@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://linktr.ee/kristyleigh" target="_blank"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <!-------- SIDE NAV -------->   
+    <nav class="sideNav">
+        <button class="menuX">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+            />
+            </svg>
+        </button>
+        <ul>
+        <li><a href="#about" class="menuLink" aria-label="go back to top">
+            <i class="fa fa-angle-up fa-2x"></i>
+        </a></li>
+        <li><a class="menuLink" href="index.html">Home</a></li>
+        <li><a class="menuLink" href="index.html#about">About</a></li>
+        <li><a class="menuLink" href="index.html#projects">Projects</a></li>
+        <li><a class="menuLink" href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about"  style="margin-top: 4rem;">
       <div class="container">
         <h2 class="section-title">My Portfolio (v1)</h2>
         <div class="about-wrapper__info">
