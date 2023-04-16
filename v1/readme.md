@@ -21,21 +21,29 @@ This is [portfolio v1](https://ms-kl.github.io/v1/) was created by Kristy Leigh 
 - Figma
 - Wireframing
 
+## Demo:
+
+<a href="https://www.loom.com/share/4047b062ce334fd9ae27f65ce788a522">
+    <p>Kristy Leigh • Portfolio v1 • Front End Demo - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4047b062ce334fd9ae27f65ce788a522-with-play.gif">
+  </a>
+
 ## Wireframes:
 
-Portfolio was designed with responsiveness in mind, using [Figma](https://www.figma.com/) wireframe program. Mobile, Tablet and Desktop were considered for each page.
+All portfolio pages have been designed with media queries and specifically chosen elements to ensure responsiveness across all devices. Mobile, Tablet and Desktop wireframes were created with
+[Figma](https://www.figma.com/).
 
 1. Home page
-   ![image](v1/Screenshots/wireframe-homepage.png)
+   ![image](Screenshots/wireframe-homepage.png)
 
 2. About page
-   ![image](v1/Screenshots/wireframe-aboutpage.png)
+   ![image](Screenshots/wireframe-aboutpage.png)
 
 3. Projects page
-   ![image](v1/Screenshots/wireframe-projectspage.png)
+   ![image](Screenshots/wireframe-projectspage.png)
 
 4. Contact page
-   ![image](v1/Screenshots/wireframe-contactpage.png)
+   ![image](Screenshots/wireframe-contactpage.png)
 
 ## Resources / Attribution Credits:
 
@@ -51,23 +59,3 @@ Out of respect for the OG creator(s) please find supplier list below:
 - [Gyazo](https://www.gyazo.com/)
 - [She Codes](https://www.shecodes.com.au/)
 - [Google Fonts](https://fonts.google.com/)
-
-## Website CSS & Responsiveness:
-
-All portfolio pages have been designed with media queries and specifically chosen elements to ensure responsiveness across all devices. Please find demo gifs below for each page.
-
-1. Home Page
-
-<img src="v1/Screenshots/homepage-demo.gif" alt="demo of homepage">
-
-2. About Page
-
-<img src="v1/Screenshots/about-demo.gif">
-
-3. Project Page
-
-<img src="v1/Screenshots/projectpage-demo.gif">
-
-4. Contact Page
-
-<img src="v1/Screenshots/contact-demo.gif">
