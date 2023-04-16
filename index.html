@@ -67,9 +67,60 @@ Have fun creating your portfolio on this template!!! -->
       type="text/javascript"
       src="./javascript/scrollveal.js"
     ></script>
+    <script 
+    src="./javascript/hamburger.js"
+    ></script>
 
   </head>
   <body>
+        <!-------- TOP NAV -------->       
+        <nav class="topNav">
+          <button class="ham">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                  />
+              </svg>
+          </button>
+
+          <!-------- SOCIALS --------> 
+          <div class="social-media-icons">
+              <a href="https://www.linkedin.com/in/kristyleighgray/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.github.com/Ms-KL" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="mailto: thekristyleigh@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+              <a href="https://linktr.ee/kristyleigh" target="_blank"><i class="fa-solid fa-user"></i></a>
+          </div>
+      </nav>
+
+      <div class="overlay"></div>
+
+      <!-------- SIDE NAV -------->   
+      <nav class="sideNav">
+          <button class="menuX">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+              />
+              </svg>
+          </button>
+          <ul>
+          <li><a href="#hero" class="menuLink" aria-label="go back to top">
+            <i class="fa fa-angle-up fa-2x"></i>
+          </a></li>
+          <li><a class="menuLink" href="index.html">Home</a></li>
+          <li><a class="menuLink" href="#about">About</a></li>
+          <li><a class="menuLink" href="#projects">Projects</a></li>
+          <li><a class="menuLink" href="#contact">Contact</a></li>
+          </ul>
+      </nav>
     <!-- Hero Section -->
     <div id="hero">
       <section class="container">
@@ -91,7 +142,7 @@ Have fun creating your portfolio on this template!!! -->
     <!-- About Section -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">Who is Kristy Leigh?</h2>
+        <h2 class="section-title">About</h2>
         <div class="row about-wrapper">
           <div class="about-wrapper__image">
             <img
@@ -134,8 +185,7 @@ Have fun creating your portfolio on this template!!! -->
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">My Portfolio (v1)</h3>
               <p class="project-wrapper__text-info">
-                <strong>HTML • CSS</strong><a href="#hero" class="cta-btn text-color-main" aria-label="go back to top" style="padding: 0;">
-                  <i class="fa-sharp fa-solid fa-arrow-up" aria-hidden="true"></i>
+                <strong>HTML • CSS</strong>
                 </a>
                   <br>
                 This was the first project completed as part of the She Codes Plus program and focussed on the exploration and application of responsive HTML and CSS. 
@@ -260,7 +310,7 @@ Have fun creating your portfolio on this template!!! -->
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Get in Touch</h2>
+        <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text">Insert stuff here about being technical and non technical, passionate about self learning, database schemas, d&d etc, coffee, whisky, pinball etc </p>
           <a href="mailto: thekristyleigh@gmail.com" class="cta-btn cta-btn--resume">Talk nerdy to me</a>
