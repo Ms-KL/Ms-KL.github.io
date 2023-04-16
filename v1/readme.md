@@ -6,10 +6,6 @@
 
 This is [portfolio v1](https://ms-kl.github.io/v1/) was created by Kristy Leigh as a project for the [She Codes Plus](https://www.shecodes.com.au/) program.
 
-## Disclaimer:
-
-- Project Submission ([portfolio v1](https://ms-kl.github.io/v1/)) was created by me, Kristy Leigh.
-
 ## Tech & Skills Learned:
 
 - HTML
@@ -20,7 +16,7 @@ This is [portfolio v1](https://ms-kl.github.io/v1/) was created by Kristy Leigh 
 - Figma
 - Wireframing
 
-## Demo:
+## Demo Video:
 
 <a href="https://www.loom.com/share/4047b062ce334fd9ae27f65ce788a522">
     <p>Kristy Leigh • Portfolio v1 • Front End Demo - Watch Video</p>
