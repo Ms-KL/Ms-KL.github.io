@@ -9,7 +9,6 @@ This is [portfolio v1](https://ms-kl.github.io/v1/) was created by Kristy Leigh 
 ## Disclaimer:
 
 - Project Submission ([portfolio v1](https://ms-kl.github.io/v1/)) was created by me, Kristy Leigh.
-- [Current Deployed Site](https://ms-kl.github.io/) was based on the [Template](https://github.com/AnilSeervi/DevFolio) by [Anil Seervi](https://github.com/AnilSeervi)
 
 ## Tech & Skills Learned:
 
