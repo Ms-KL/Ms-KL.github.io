@@ -1,0 +1,154 @@
+/* -------------- NAV -------------- */
+/* https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 */
+  /* https://codepen.io/ljc-dev/pen/zYoqbrN */
+  /* https://dev.to/ljcdev/comment/1b8ff */
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .topNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: #333333;
+    z-index: 3;
+    padding: 10px;
+  }
+  
+  .ham {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .menuX {
+    position: absolute;
+    top: 2rem;
+    right: 0.5rem;
+  }
+
+  .menuX {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 101;
+    background: #333333;
+    width: 150px;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+  }
+  
+  .showNav {
+    transform: translateX(0);
+  }
+  
+  .sideNav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  
+  .sideNav ul li a {
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+    border-bottom: 2px solid #333333;
+    text-decoration: none;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 1.5rem;
+    transition: all ease 0.2s;
+    i {
+      transition: all ease-in-out 0.2s;
+    }
+    &:hover {
+      transform: scale(1.1) translateY(-2px);
+      color: $primary-color;
+  }
+  }
+  
+//   .sideNav ul li a:hover, .sideNav ul li a:focus {
+//     // border-bottom: 2px solid white;
+//     color: $primary-color;
+//     font-weight: bold;
+//   }
+
+  /* --------- Sections ------------*/
+  .overlay {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .showOverlay {
+    display: block;
+  }
+
+  /* ---------------- Social NAV Icons ------------------*/
+
+  .social-media-icons {
+    margin-left: auto; /* put icons on the right */
+    display: flex;
+    align-items: center;
+  } 
+  
+  .social-media-icons a {
+    margin: 0 10px;
+    font-size: 2rem;
+    color: white;
+    transition: all ease 0.2s;
+    i {
+      transition: all ease-in-out 0.2s;
+    }
+    &:hover {
+      transform: scale(1.1) translateY(-2px);
+      color: $primary-color;
+  }
+
+  }
