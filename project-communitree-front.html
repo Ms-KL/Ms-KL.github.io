@@ -1,13 +1,3 @@
-<!-- HELLO
--
-DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
-Created by Anil Seervi.
--
-GitHub repo: https://github.com/AnilSeervi/DevFolio
-README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
--
-Have fun creating your portfolio on this template!!! -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +8,7 @@ Have fun creating your portfolio on this template!!! -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
     <!-- Title: add your Portfolio websites's title here -->
-    <title>Kristy Leigh • Portfolio (v1)</title>
+    <title>Kristy Leigh • Communitree - front</title>
 
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="Ms-KL, Kristy Leigh, python, javascript, html, css, django, django rest framework, drf, react" />
@@ -46,9 +36,6 @@ Have fun creating your portfolio on this template!!! -->
       property="og:image"
       content="./assets/portfolio.png"
     />
-
-
-
     <!-- link tags -->
     <link rel="preload" as="style" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -125,25 +112,31 @@ Have fun creating your portfolio on this template!!! -->
     <!-- About Section -->
     <section id="about"  style="margin-top: 4rem;">
       <div class="container">
-        <h2 class="section-title">My Portfolio (v1)</h2>
-        <p class="project-wrapper__text-info" style="font-size: 2rem;">
-          <strong>HTML • CSS</strong>
-        </p>
+        <h2 class="section-title">Communitree <br>(front-end)</h2>
+        <!-- <p class="project-wrapper__text-info" style="font-size: 2rem;">
+            <img src="https://img.icons8.com/color/50/null/html-5--v2.png"/>&nbsp;<img src="https://img.icons8.com/color/50/null/css3.png"/>&nbsp;<img src="https://img.icons8.com/color/50/null/javascript--v1.png"/>&nbsp;<img src="https://img.icons8.com/color/49/null/react-native.png"/>
+        </p> -->
         <br>
         <br>
         <div class="about-wrapper__info">
           <p class="about-wrapper__info-text" style="font-size: x-large;">
-            This was the first project completed as part of the She Codes Plus program and focussed on the <strong>and application of responsive design</strong>. All portfolio pages have been designed with media queries and specifically chosen elements to ensure responsiveness across all devices. All assets have been obtained using no-attribute sources and/or designed myself. 
+            Communitree is a crowdfunding website and was the <strong>final individual project</strong> for the She Codes Plus Program. This project was broken into three parts: <strong>MVP development, front and back end deployment</strong>. <br><br>
+            The client-facing app was a result of significant MVP planning, including: conceptual brainstorming, <strong>market research</strong>, user-flow discovery, mood board development, <strong>feature viability assessments</strong> and preparing for API Requests to the DRF back-end. <br><br>
+            Once the initial preparation was complete and back-end database was constructed, focus shifted to the front-end design and build, which was aided by the <strong>extensive planning and stable deployed back-end</strong>.
           </p>
         </div>
         <br>
         <br>
         <span class="about-wrapper__cta">
-            <a href="https://ms-kl.github.io/v1" target="_blank" class="cta-btn cta-btn--resume"
+            <a href="https://prismatic-phoenix-20010b.netlify.app/" target="_blank" class="cta-btn cta-btn--resume"
             >Live</a
             >&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/Ms-KL/Ms-KL.github.io/tree/main/v1" target="_blank" class="cta-btn cta-btn--resume"
+            <a href="https://github.com/Ms-KL/crowdfunding" target="_blank" class="cta-btn cta-btn--resume"
               >Repo</a
+            >
+            &nbsp;&nbsp;&nbsp;
+            <a href="file:///C:/GIT/ms-kl/ms-kl-github-io-portfolio/project-communitree-back.html" class="cta-btn cta-btn--resume"
+              >Back-End</a
             >
         </span>
 
@@ -151,96 +144,134 @@ Have fun creating your portfolio on this template!!! -->
     </section>
     <!-- /END About Section -->
 
+
     <!--Projects Section-->
     <section id="projects">
       <div class="container">
-        <div class="project-wrapper">
-          <!--DEMO -->
-          <h2 id="portfolio-demo" class="section-title dark-blue-text">Demo</h2>
-          <br>
-            <div class="project-wrapper__image">
-                <div style="position: relative; padding-bottom: 69.09788867562379%; height: 0;"><iframe src="https://www.loom.com/embed/4047b062ce334fd9ae27f65ce788a522" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                </div>
-            </div>
+        <!--DEMO -->
+        <h2 id="crowdfunding-back-demo" class="section-title dark-blue-text">Demo</h2>
+        <br>
+        <div class="project-wrapper__image">
+            <div style="position: relative; padding-bottom: 75.9493670886076%; height: 0;"><iframe src="https://www.loom.com/embed/e2da8bb6ad9b4343980dbf35f5d6347c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
 
-        <!-- WIREFRAMES -->
         <div class="project-wrapper">
-        <h2 class="section-title dark-blue-text">Wire-frames</h2>
-        <h4><strong style="font-size: large;">Click a wire-frame to see the deployed version</strong></h4>
-        <br>
-        <br>
-        <br>
+          <h2 class="section-title dark-blue-text" id="communitree-backend-process">Planning</h2>
+
+            <!-- Each .row is a project -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Project Brainstorm</h3>
+                <p class="project-wrapper__text-info">
+                    We were tasked with the challenge of creating a crowdfunding app with focus on a new cause. I am passionate about my town's urban canopy and surrounding suburbs do not have the same green-coverage. As a result, I decided my project would aid local governments increase their urban canopy.
+                </p>
+                </div>
+                <div class="project-wrapper__image">
+                    <div class="thumbnail-no-link">
+                    <img
+                        src="./assets/crowdfunding-front-ideas.png"
+                        class="img-fluid"
+                        alt="Crowdfunding project ideas"
+                        width="100%"
+                    />
+                </div>
+                </div>
+            </article>
+            <!-- /END Project -->
+            <!-- Each .row is a project -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Research</h3>
+                    <p class="project-wrapper__text-info">
+                        To understand viability and regulation restrictions with this project, I reached out to multiple local councils and explored many urban forest online resources.
+                    </p>
+                </div>
+
+                <div class="project-wrapper__image">
+                    <div class="thumbnail-no-link">
+                    <img
+                    src="./assets/crowdfunding-front-research.png"
+                    class="img-fluid"
+                    alt="Crowdfunding project research"
+                    width="100%"
+                    />
+                    </div>
+                </div>
+            </article>
+            <!-- /END Project -->
+            <!-- Each .row is a project -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Names Brainstorm</h3>
+                    <p class="project-wrapper__text-info">
+                        A selection of names that were considered for the project. Tree-Huggers were my second choice.
+                    </p>
+                </div>
+
+                <div class="project-wrapper__image">
+                    <div class="thumbnail-no-link">
+                    <img
+                    src="./assets/crowdfunding-front-names.png"
+                    class="img-fluid"
+                    alt="Crowdfunding project names brainstorm"
+                    width="100%"
+                    />
+                </div>
+                </div>
+            </article>
+            <!-- /END Project -->
+            <!-- Each .row is a project -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Concept Planning</h3>
+                    <p class="project-wrapper__text-info">
+                        After brainstorming and researching the Communitree concept, user metrics, design and features were explored and detailed.
+                    </p>
+                </div>
+                <div class="project-wrapper__image">
+                    <div class="thumbnail-no-link">
+                    <img
+                    src="./assets/crowdfunding-front-concept.png"
+                    class="img-fluid"
+                    alt="Weather Project Starter Code"
+                    width="100%"
+                    
+                    />
+                </div>
+                </div>
+            </article>
+            <!-- /END Project -->
+
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Mood Board</h3>
+            <p class="project-wrapper__text-info">
+                This moodboard was developed to provide a style guide for the css elements of the website.
+            </p>
+          </div>
           <div class="project-wrapper__image">
-            <h3 class="project-wrapper__text-title">Home Page</h3>
-            <a href="https://ms-kl.github.io/v1" target="_blank">
-            <div class="thumbnail rounded">
-              <img
-                src="https://raw.githubusercontent.com/Ms-KL/Ms-KL.github.io/main/v1/Screenshots/wireframe-homepage.png"
+            <div class="thumbnail-no-link">
+                <img
+                src="./assets/crowdfunding-front-moodboard.png"
                 class="img-fluid"
-                alt="Wireframe for Home Page"
+                alt="Crowdfunding project Moodboard"
+                width="100%"
               />
             </div>
-            </a>
           </div>
-        </div>
-          <!-- END wireframe -->
-
-        <!-- Wireframe -->
-        <div class="project-wrapper">
-          <div class="project-wrapper__image">
-            <h3 class="project-wrapper__text-title">About Page</h3>
-            <a href="https://ms-kl.github.io/v1/about.html" target="_blank">
-              <div class="thumbnail rounded">
-                <img
-                  src="https://raw.githubusercontent.com/Ms-KL/Ms-KL.github.io/main/v1/Screenshots/wireframe-aboutpage.png"
-                  class="img-fluid"
-                  alt="Wireframe for About Page"
-                />
-              </div>
-            </a>
-          </div>
-        </div>
-          <!-- END wireframe -->
-            
-        <!-- Wireframe -->
-        <div class="project-wrapper">
-          <div class="project-wrapper__image">
-              <h3 class="project-wrapper__text-title">Projects Page</h3>
-              <a href="https://ms-kl.github.io/v1/projects.html" target="_blank">
-                <div class="thumbnail rounded">
-                  <img
-                    src="https://raw.githubusercontent.com/Ms-KL/Ms-KL.github.io/main/v1/Screenshots/wireframe-projectspage.png"
-                    class="img-fluid"
-                    alt="Wireframe for Projects Page"
-                  />
-                </div>
-              </a>
-            </div>
-          </div>
-            <!-- END wireframe -->
-
-            
-        <!-- Wireframe -->
-        <div class="project-wrapper">
-          <div class="project-wrapper__image">
-                <h3 class="project-wrapper__text-title">Contact Page</h3>
-              <a href="https://ms-kl.github.io/v1/contact.html" target="_blank">
-                <div class="thumbnail rounded">
-                  <img
-                    src="https://raw.githubusercontent.com/Ms-KL/Ms-KL.github.io/main/v1/Screenshots/wireframe-contactpage.png"
-                    class="img-fluid"
-                    alt="Wireframe for Contact Page"
-                  />
-                </div>
-              </a>
-            </div>
-          </div>
-            <!-- END wireframe -->
-        </div>
+        </article>
+        <!-- /END Project -->
       </div>
-    </section>
-    <!-- End Projects Section -->
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
 
     <!-- Contact Section -->
     <section id="contact">
@@ -328,4 +359,3 @@ Have fun creating your portfolio on this template!!! -->
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
   </body>
 </html>
-
