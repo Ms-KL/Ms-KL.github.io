@@ -77,10 +77,11 @@
   transform: translateX(-50%);
 }
 .scroll-down {
-  height: 50px;
+  height: 70px;
   width: 30px;
-  // border: 2px solid #000000;
-  // border-radius: 50px;
+  border: 1.65px solid $secondary-color;
+  padding: 20px;
+  border-radius: 30px;
   cursor: pointer;
   &::before,
   &::after {
