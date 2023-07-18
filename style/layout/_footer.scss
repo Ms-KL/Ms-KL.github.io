@@ -50,12 +50,33 @@
 }
 
 .back-to-top i {
-  color: $white-color;
+  // color: $white-color;
+  color: $primary-color;
   margin: 1rem 0 $default-font-size;
   transition: all 200ms ease;
+  font-size: 3rem;
 
   &:hover {
     transform: translateY(-2px);
     color: $primary-color;
   }
 }
+
+// hovering arrow 
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+
+
