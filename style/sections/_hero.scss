@@ -73,14 +73,15 @@
 .scroll-down-link {
   position: absolute;
   left: 50%;
-  bottom: 20px;
+  bottom: 0;
+  margin-bottom: 2rem;
   transform: translateX(-50%);
 }
 .scroll-down {
-  height: 70px;
-  width: 30px;
+  height: 50px;
+  width: 20px;
   border: 1.65px solid $secondary-color;
-  padding: 20px;
+  padding: 15px;
   border-radius: 30px;
   cursor: pointer;
   &::before,
